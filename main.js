@@ -439,7 +439,7 @@ const renderList = (data, filterText = '') => {
       wholesaleBtn.className = 'wholesale-promo';
       // WhatsApp number placeholder - User needs to update
       wholesaleBtn.innerHTML = `
-            <a href="https://wa.me/5491122334455?text=Hola,%20quisiera%20consultar%20por%20la%20lista%20de%20precios%20mayorista." 
+            <a href="https://wa.me/5493813315389?text=Hola,%20quisiera%20consultar%20por%20la%20lista%20de%20precios%20mayorista." 
                target="_blank" 
                class="btn-wholesale">
                🏢 ¿Sos Mayorista? Consultar Aquí
