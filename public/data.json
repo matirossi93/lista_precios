@@ -1,0 +1,4771 @@
+{
+  "updatedAt": "16/02/2026",
+  "contact": "tel: 381315389 - mail: gerencia@semilleroelmanantial.com.ar",
+  "categories": [
+    {
+      "name": "ALIMENTO BALANCEADO ANIMAL",
+      "brands": [
+        {
+          "name": "CONECAR",
+          "items": [
+            {
+              "code": "6",
+              "description": "CONEJO X 25 KG - CONECAR",
+              "price1": 19226,
+              "price2": 17304,
+              "price3": 15268,
+              "price4": 14702
+            },
+            {
+              "code": "25",
+              "description": "CONEJO Madre y Gazapo x 25 KG - CONECAR",
+              "price1": 18044,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            }
+          ]
+        },
+        {
+          "name": "GANAVE",
+          "items": [
+            {
+              "code": "1",
+              "description": "BEBE x 25 Kg",
+              "price1": 19427,
+              "price2": 17485,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "3",
+              "description": "ENGORDE x 25 Kg",
+              "price1": 19421,
+              "price2": 17478,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "10",
+              "description": "PAJARO 4 mm x 25 Kg - GANAVE",
+              "price1": 51104,
+              "price2": 45994,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "4",
+              "description": "POSTURA x 25 Kg",
+              "price1": 19418,
+              "price2": 17476,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "2",
+              "description": "RECRIA x 25 Kg",
+              "price1": 19417,
+              "price2": 17475,
+              "price3": null,
+              "price4": null
+            }
+          ]
+        },
+        {
+          "name": "GEPSA",
+          "items": [
+            {
+              "code": "7",
+              "description": "CONEJO X 25 KG - GEPSA",
+              "price1": 17362,
+              "price2": 15569,
+              "price3": 15121,
+              "price4": 14561
+            },
+            {
+              "code": "9",
+              "description": "FORTALEZA PROFESIONAL X 25 KG",
+              "price1": 30940,
+              "price2": 27846,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "11",
+              "description": "PAJARO 3 mm x 25 kg - GEPSA",
+              "price1": 51889,
+              "price2": 46699,
+              "price3": null,
+              "price4": null
+            }
+          ]
+        },
+        {
+          "name": "PRODUCCION PROPIA SEMILLERO",
+          "items": [
+            {
+              "code": "50",
+              "description": "CABALLO X 40 KG",
+              "price1": 22163,
+              "price2": 19883,
+              "price3": 18870,
+              "price4": 17350
+            },
+            {
+              "code": "51",
+              "description": "CERDO X 40 KG",
+              "price1": 25117,
+              "price2": 22677,
+              "price3": 21385,
+              "price4": 19089
+            },
+            {
+              "code": "59",
+              "description": "INICIADOR X 40 KG Nutrimax",
+              "price1": 31386,
+              "price2": 28533,
+              "price3": 27582,
+              "price4": 24729
+            },
+            {
+              "code": "63",
+              "description": "PREINICIADOR X 40 KG Nutrimax",
+              "price1": 27608,
+              "price2": 25097,
+              "price3": 23467,
+              "price4": 20982
+            },
+            {
+              "code": "53",
+              "description": "LECHON X 40 KG",
+              "price1": 27858,
+              "price2": 25152,
+              "price3": 23719,
+              "price4": 21172
+            },
+            {
+              "code": "54",
+              "description": "PONEDORA 0-6 SEMANAS X 40 KG Nutrimax",
+              "price1": 24028,
+              "price2": 21611,
+              "price3": 21149,
+              "price4": 19479
+            },
+            {
+              "code": "56",
+              "description": "PONEDORA 15-17 SEMANAS X 40 KG Nutrimax",
+              "price1": 24028,
+              "price2": 21611,
+              "price3": 21149,
+              "price4": 19479
+            },
+            {
+              "code": "57",
+              "description": "PONEDORA POSTURA X 40 KG Nutrimax",
+              "price1": 24028,
+              "price2": 21611,
+              "price3": 21149,
+              "price4": 19479
+            },
+            {
+              "code": "60",
+              "description": "TERMINADOR X 40 KG Nutrimax",
+              "price1": 26089,
+              "price2": 23464,
+              "price3": 22963,
+              "price4": 21149
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ALIMENTO PARA PERROS",
+      "brands": [
+        {
+          "name": "ARROZ PARA PERRO",
+          "items": [
+            {
+              "code": "160",
+              "description": "ARROZ PARA PERRO LUMPY",
+              "price1": 14503,
+              "price2": 13052,
+              "price3": null,
+              "price4": null
+            }
+          ]
+        },
+        {
+          "name": "BALANCED",
+          "items": [
+            {
+              "code": "172",
+              "description": "BALANCED CACHORRO RAZA PEQ X 7",
+              "price1": 46426,
+              "price2": 37141,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "173",
+              "description": "BALANCED CACHORRO RAZA MED X 20KG",
+              "price1": 94902,
+              "price2": 75922,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "174",
+              "description": "BALANCED CACHORRO RAZA GRANDE X 20KG",
+              "price1": 94902,
+              "price2": 75922,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "175",
+              "description": "BALANCED ADULTO RAZA PEQUEÑA X 7",
+              "price1": 38890,
+              "price2": 31112,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "176",
+              "description": "BALANCED ADULTO RAZA GRANDE X 20KG",
+              "price1": null,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "181",
+              "description": "BALANCED ADULTO RAZA MEDIANA X 20KG",
+              "price1": 77429,
+              "price2": 61943,
+              "price3": null,
+              "price4": null
+            }
+          ]
+        },
+        {
+          "name": "BELCAN",
+          "items": [
+            {
+              "code": "134",
+              "description": "BELCAN ADULTO X 22KG",
+              "price1": 35346,
+              "price2": 31812,
+              "price3": 29455,
+              "price4": 25588
+            },
+            {
+              "code": "135",
+              "description": "BELCAN CACHORRO X 15KG",
+              "price1": 28830,
+              "price2": 25947,
+              "price3": 24024,
+              "price4": 20871
+            }
+          ]
+        },
+        {
+          "name": "COMPINCHE",
+          "items": [
+            {
+              "code": "161",
+              "description": "COMPINCHE PERRO CARNE X 25 KG",
+              "price1": 20924,
+              "price2": 18831,
+              "price3": null,
+              "price4": null
+            }
+          ]
+        },
+        {
+          "name": "COMPLETE",
+          "items": [
+            {
+              "code": "168",
+              "description": "COMPLETE PERRO ADULTO RAZA PEQ X 20KG",
+              "price1": 61383,
+              "price2": 49106,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "169",
+              "description": "COMPLETE PERRO ADULTO RAZA MED Y GDE X 20KG",
+              "price1": 58254,
+              "price2": 46603,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "183",
+              "description": "COMPLETE CACHORRO RAZA MED Y GDE X 20KG",
+              "price1": 64226,
+              "price2": 51381,
+              "price3": null,
+              "price4": null
+            }
+          ]
+        },
+        {
+          "name": "DOG SELECCIÓN",
+          "items": [
+            {
+              "code": "127",
+              "description": "DS CRIAD. ADULTO X 15 KG",
+              "price1": 38859,
+              "price2": 34973,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "123",
+              "description": "DS CRIADORES ADULTO X 21 KG",
+              "price1": 47575,
+              "price2": 42816,
+              "price3": 34255,
+              "price4": null
+            },
+            {
+              "code": "126",
+              "description": "DS CRIADORES CACHORRO X 21 KG",
+              "price1": 53926,
+              "price2": 48532,
+              "price3": 39475,
+              "price4": null
+            },
+            {
+              "code": "125",
+              "description": "DS CRIADORES CACHORRO X 15 KG",
+              "price1": null,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "124",
+              "description": "DS CRIADORES RAZA PEQUEÐA X 15 KG",
+              "price1": 41734,
+              "price2": 37561,
+              "price3": 26120,
+              "price4": null
+            }
+          ]
+        },
+        {
+          "name": "EXACT PREMIUM",
+          "items": [
+            {
+              "code": "232",
+              "description": "EXACT PREMIUM ADULTO 18KG",
+              "price1": 29817,
+              "price2": 27106,
+              "price3": 23935,
+              "price4": null
+            },
+            {
+              "code": "231",
+              "description": "EXACT PREMIUM CACHORRO 15KG",
+              "price1": 24537,
+              "price2": 22306,
+              "price3": 20243,
+              "price4": null
+            }
+          ]
+        },
+        {
+          "name": "EXACT CRIADORES",
+          "items": [
+            {
+              "code": "234",
+              "description": "EXACT CRIADORES ADULTO X 20K",
+              "price1": 23490,
+              "price2": 21354,
+              "price3": 19380,
+              "price4": null
+            },
+            {
+              "code": "235",
+              "description": "EXACT CRIADORES CACHORRO X 15K",
+              "price1": 17703,
+              "price2": 16093,
+              "price3": 14605,
+              "price4": null
+            }
+          ]
+        },
+        {
+          "name": "FLECKY",
+          "items": [
+            {
+              "code": "165",
+              "description": "FLECKY ADULTO CARNE  X 15 KG",
+              "price1": 14528,
+              "price2": 12107,
+              "price3": 10960,
+              "price4": 10473
+            },
+            {
+              "code": "166",
+              "description": "FLECKY ADULTO CARNE  X 21 KG",
+              "price1": 19965,
+              "price2": 16638,
+              "price3": 15062,
+              "price4": 14393
+            },
+            {
+              "code": "163",
+              "description": "FLECKY ADULTO MIX X 15 KG",
+              "price1": 13802,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "164",
+              "description": "FLECKY ADULTO MIX X 21 KG",
+              "price1": 18967,
+              "price2": 15807,
+              "price3": 15062,
+              "price4": 14393
+            },
+            {
+              "code": "167",
+              "description": "FLECKY CACHORRO X 10 KG",
+              "price1": 13661,
+              "price2": 11345,
+              "price3": 10959,
+              "price4": 9802
+            }
+          ]
+        },
+        {
+          "name": "GRAN CAMPEON",
+          "items": [
+            {
+              "code": "130",
+              "description": "GRAN CAMPEON AD ROJO Carne y Pollo X 21 KG",
+              "price1": 36276,
+              "price2": 32648,
+              "price3": 25393,
+              "price4": null
+            },
+            {
+              "code": "138",
+              "description": "GRAN CAMPEON AD AZUL Carne y Vegetal X 21 KG",
+              "price1": 36276,
+              "price2": 32648,
+              "price3": 25393,
+              "price4": null
+            },
+            {
+              "code": "131",
+              "description": "GRAN CAMPEON CACHORRO X 10 KG",
+              "price1": 22164,
+              "price2": 19947,
+              "price3": 15515,
+              "price4": null
+            },
+            {
+              "code": "140",
+              "description": "GRAN CAMPEON MANTENIMIENTO X 21 KG",
+              "price1": 36276,
+              "price2": 32648,
+              "price3": 25393,
+              "price4": null
+            }
+          ]
+        },
+        {
+          "name": "PACHA",
+          "items": [
+            {
+              "code": "132",
+              "description": "PACHA MIX X 15 KG",
+              "price1": 19192,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "133",
+              "description": "PACHA MIX X 22 KG",
+              "price1": 27324,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            }
+          ]
+        },
+        {
+          "name": "PREMIUM",
+          "items": [
+            {
+              "code": "177",
+              "description": "PREMIUM CACHORRO X 15KG",
+              "price1": 45305,
+              "price2": 36244,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "185",
+              "description": "PREMIUM CACHORRO X 20KG",
+              "price1": 21500,
+              "price2": 19350,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "178",
+              "description": "PREMIUM PERRO ADULTO RAZA PEQ X 20KG",
+              "price1": 49531,
+              "price2": 39625,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "179",
+              "description": "PREMIUM PERRO ADULTO X 20KG",
+              "price1": 49531,
+              "price2": 39625,
+              "price3": null,
+              "price4": null
+            }
+          ]
+        },
+        {
+          "name": "ROSCO",
+          "items": [
+            {
+              "code": "105",
+              "description": "ROSCO CACHORRO x 15 KG",
+              "price1": 23308,
+              "price2": 20978,
+              "price3": 18647,
+              "price4": null
+            },
+            {
+              "code": "100",
+              "description": "ROSCO CARNE x 15 KG",
+              "price1": 16940,
+              "price2": 15246,
+              "price3": 13552,
+              "price4": null
+            },
+            {
+              "code": "101",
+              "description": "ROSCO CARNE x 22 KG",
+              "price1": 23447,
+              "price2": 21102,
+              "price3": 18758,
+              "price4": null
+            },
+            {
+              "code": "103",
+              "description": "ROSCO COCK x 15 KG",
+              "price1": 18449,
+              "price2": 16604,
+              "price3": 14759,
+              "price4": null
+            },
+            {
+              "code": "104",
+              "description": "ROSCO COCK x 22 KG",
+              "price1": 26027,
+              "price2": 23425,
+              "price3": 20821,
+              "price4": null
+            },
+            {
+              "code": "102",
+              "description": "ROSCO POLLO x 15 KG",
+              "price1": 16940,
+              "price2": 15246,
+              "price3": 13552,
+              "price4": null
+            }
+          ]
+        },
+        {
+          "name": "TIERNITOS",
+          "items": [
+            {
+              "code": "117",
+              "description": "TIERNITO CACHO x 22 KG",
+              "price1": 36480,
+              "price2": 32832,
+              "price3": 30400,
+              "price4": null
+            },
+            {
+              "code": "116",
+              "description": "TIERNITO CACHOx 15 KG",
+              "price1": 30223,
+              "price2": 27201,
+              "price3": 25186,
+              "price4": null
+            },
+            {
+              "code": "110",
+              "description": "TIERNITO CARNE  x 15 KG",
+              "price1": 27207,
+              "price2": 24486,
+              "price3": 22672,
+              "price4": null
+            },
+            {
+              "code": "111",
+              "description": "TIERNITO CARNE  x 22 KG",
+              "price1": 34450,
+              "price2": 31005,
+              "price3": 28708,
+              "price4": null
+            },
+            {
+              "code": "112",
+              "description": "TIERNITO POLLO x 15 KG",
+              "price1": null,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "114",
+              "description": "TIERNITO VEGET x 15 KG",
+              "price1": 27207,
+              "price2": 24486,
+              "price3": 22672,
+              "price4": null
+            },
+            {
+              "code": "115",
+              "description": "TIERNITO VEGET x 22 KG",
+              "price1": 34450,
+              "price2": 31005,
+              "price3": 28708,
+              "price4": null
+            }
+          ]
+        },
+        {
+          "name": "SNACK TIERNITOS",
+          "items": [
+            {
+              "code": "190",
+              "description": "SNACK TIERNITO DENTAL R. MEDIANA X 20U",
+              "price1": 26069,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "191",
+              "description": "SNACK TIERNITO DENTAL R. PEQUEÑA X 30U",
+              "price1": 35193,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "192",
+              "description": "SNACK TIERNITO ESTRELLA X 12U",
+              "price1": 18273,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "193",
+              "description": "SNACK TIERNITO BOCADITOS X 12U",
+              "price1": 18273,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            }
+          ]
+        },
+        {
+          "name": "SALSAS TIERNITOS",
+          "items": [
+            {
+              "code": "194",
+              "description": "SALSA TIERNITO CARNE X 100 GR + 20GR X 24U",
+              "price1": 17556,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "195",
+              "description": "SALSA TIERNITO CORDERO X 100 GR + 20GR X 24U",
+              "price1": 17556,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "196",
+              "description": "SALSA TIERNITO PAVITA X 100 GR + 20GR X 24U",
+              "price1": 17556,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            }
+          ]
+        },
+        {
+          "name": "ZIMPI",
+          "items": [
+            {
+              "code": "150",
+              "description": "ZIMPI X 15 KG",
+              "price1": 13441,
+              "price2": 12097,
+              "price3": 11201,
+              "price4": 10590
+            },
+            {
+              "code": "151",
+              "description": "ZIMPI X 25 KG",
+              "price1": 20882,
+              "price2": 18793,
+              "price3": 17401,
+              "price4": 16452
+            }
+          ]
+        },
+        {
+          "name": "* Precios sujetos a modificacion sin previo aviso.",
+          "items": []
+        }
+      ]
+    },
+    {
+      "name": "ALIMENTO PARA GATOS",
+      "brands": [
+        {
+          "name": "9 LIVES",
+          "items": [
+            {
+              "code": "210",
+              "description": "9 LIVES  CARNE  x 15 KG",
+              "price1": 47752,
+              "price2": 43411,
+              "price3": 39793,
+              "price4": null
+            },
+            {
+              "code": "211",
+              "description": "9 LIVES SALMON Y ATUN x 15 KG",
+              "price1": 47752,
+              "price2": 43411,
+              "price3": 39793,
+              "price4": null
+            },
+            {
+              "code": "215",
+              "description": "9 LIVES CASTRADO x 15 KG",
+              "price1": 47752,
+              "price2": 43411,
+              "price3": 39793,
+              "price4": null
+            },
+            {
+              "code": "212",
+              "description": "9 LIVES GATITO x 8 KG",
+              "price1": 28376,
+              "price2": 25796,
+              "price3": 23646,
+              "price4": null
+            },
+            {
+              "code": "214",
+              "description": "9 LIVES SALMON Y ATUN x 8 KG",
+              "price1": null,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            }
+          ]
+        },
+        {
+          "name": "BALANCED",
+          "items": [
+            {
+              "code": "186",
+              "description": "BALANCED GATO ADULTO X 7",
+              "price1": 64075,
+              "price2": 51260,
+              "price3": null,
+              "price4": null
+            }
+          ]
+        },
+        {
+          "name": "BELCAT",
+          "items": [
+            {
+              "code": "136",
+              "description": "BELCAT X 10 KG",
+              "price1": 29085,
+              "price2": 26177,
+              "price3": 24237,
+              "price4": 21055
+            }
+          ]
+        },
+        {
+          "name": "CHEF CAT",
+          "items": [
+            {
+              "code": "242",
+              "description": "CHEF CAT GATOS ADULTOS X 8 KGR",
+              "price1": 13375,
+              "price2": 12037,
+              "price3": 11146,
+              "price4": null
+            },
+            {
+              "code": "243",
+              "description": "CHEF CAT GATOS ADULTOS X 15 KGR",
+              "price1": 20718,
+              "price2": 18647,
+              "price3": 17265,
+              "price4": null
+            }
+          ]
+        },
+        {
+          "name": "COMPLETE",
+          "items": [
+            {
+              "code": "170",
+              "description": "COMPLETE GATO ADULTO X 15KG",
+              "price1": 73765,
+              "price2": 59012,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "171",
+              "description": "COMPLETE GATO CASTRADO X 7",
+              "price1": 45604,
+              "price2": 36484,
+              "price3": null,
+              "price4": null
+            }
+          ]
+        },
+        {
+          "name": "EXACT PREMIUM",
+          "items": [
+            {
+              "code": "233",
+              "description": "EXACT PREMIUM GATO URINARIO 8KG",
+              "price1": 24828,
+              "price2": 22571,
+              "price3": 20483,
+              "price4": null
+            }
+          ]
+        },
+        {
+          "name": "EXACT CRIADORES",
+          "items": [
+            {
+              "code": "236",
+              "description": "EXACT CRIADORES GATO X 10K",
+              "price1": 19442,
+              "price2": 17674,
+              "price3": 16039,
+              "price4": null
+            }
+          ]
+        },
+        {
+          "name": "FULL CAT",
+          "items": [
+            {
+              "code": "281",
+              "description": "FULL CAT PESCADO X 10 KG",
+              "price1": 14174,
+              "price2": 11713,
+              "price3": 12053,
+              "price4": 11204
+            }
+          ]
+        },
+        {
+          "name": "GRAN CAMPEON",
+          "items": [
+            {
+              "code": "137",
+              "description": "GRAN CAMPEON GATO X 10 KG",
+              "price1": 29382,
+              "price2": 26444,
+              "price3": 20265,
+              "price4": null
+            }
+          ]
+        },
+        {
+          "name": "PREMIUM",
+          "items": [
+            {
+              "code": "180",
+              "description": "PREMIUM GATO ADULTO X 7",
+              "price1": 36095,
+              "price2": 28876,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "182",
+              "description": "PREMIUM GATO URINARY X 7",
+              "price1": 39704,
+              "price2": 31763,
+              "price3": null,
+              "price4": null
+            }
+          ]
+        },
+        {
+          "name": "ROSCO",
+          "items": [
+            {
+              "code": "200",
+              "description": "ROSCO GATO PESCADO x 10 KG",
+              "price1": 18673,
+              "price2": 16806,
+              "price3": 14938,
+              "price4": null
+            },
+            {
+              "code": "201",
+              "description": "ROSCO GATO COCK x 10 KG",
+              "price1": 19412,
+              "price2": 17471,
+              "price3": 15530,
+              "price4": null
+            }
+          ]
+        },
+        {
+          "name": "TIERNITOS",
+          "items": [
+            {
+              "code": "270",
+              "description": "TIERNITOS GATO X 10 KG",
+              "price1": null,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            }
+          ]
+        },
+        {
+          "name": "VITALFUN",
+          "items": [
+            {
+              "code": "1016",
+              "description": "ARENA SANITARIA VITALFUN X 6K",
+              "price1": 5558,
+              "price2": 4632,
+              "price3": null,
+              "price4": null
+            }
+          ]
+        },
+        {
+          "name": "ZIMPI",
+          "items": [
+            {
+              "code": "185",
+              "description": "ZIMPI GATO X 15 KG",
+              "price1": 21500,
+              "price2": 19350,
+              "price3": 17917,
+              "price4": 16679
+            }
+          ]
+        },
+        {
+          "name": "PIEDRAS SANITARIAS",
+          "items": [
+            {
+              "code": "995",
+              "description": "PIEDRAS SANITARIAS MI NINO X 12",
+              "price1": 4975,
+              "price2": 4146,
+              "price3": 4059,
+              "price4": 3995
+            },
+            {
+              "code": "1009",
+              "description": "PIEDRAS SANITARIAS X 20 KG",
+              "price1": 7480,
+              "price2": 6233,
+              "price3": 5666,
+              "price4": 5579
+            },
+            {
+              "code": "1010",
+              "description": "PELLET SANITARIO P/ GATO X 10K",
+              "price1": 6865,
+              "price2": 5721,
+              "price3": 5600,
+              "price4": null
+            }
+          ]
+        },
+        {
+          "name": "* Precios sujetos a modificacion sin previo aviso.",
+          "items": []
+        }
+      ]
+    },
+    {
+      "name": "CEREALES PARA DESAYUNO",
+      "brands": [
+        {
+          "name": "NUTRIFOOD",
+          "items": [
+            {
+              "code": "301",
+              "description": "ALMOHADITA DE FRUTILLA X 2.5 KG",
+              "price1": 23110,
+              "price2": 17328,
+              "price3": 16174,
+              "price4": 13863
+            },
+            {
+              "code": "302",
+              "description": "ALMOHADITA DE LIMON X 2.5 KG",
+              "price1": 22440,
+              "price2": 16833,
+              "price3": 15711,
+              "price4": 13467
+            },
+            {
+              "code": "310",
+              "description": "ANILLOS DE MIEL X 2.5 KG",
+              "price1": 17924,
+              "price2": 13443,
+              "price3": 12547,
+              "price4": 10755
+            },
+            {
+              "code": "311",
+              "description": "ANILLOS FRUTADOS x 2.5 Kg",
+              "price1": 16037,
+              "price2": 12028,
+              "price3": 11226,
+              "price4": 9622
+            },
+            {
+              "code": "320",
+              "description": "BOLITAS DE CHOCOLATE x 2.5 Kg",
+              "price1": 18063,
+              "price2": 13548,
+              "price3": 12644,
+              "price4": 10838
+            },
+            {
+              "code": "330",
+              "description": "CEREAL CON AZUCAR x 2.5 Kg",
+              "price1": 15658,
+              "price2": 11744,
+              "price3": 10961,
+              "price4": 9395
+            },
+            {
+              "code": "331",
+              "description": "CEREAL INTEGRAL x 2.5 Kg",
+              "price1": 17308,
+              "price2": 12982,
+              "price3": 12116,
+              "price4": 10385
+            },
+            {
+              "code": "332",
+              "description": "CEREAL SIN AZUCAR X 2.5 KG",
+              "price1": 15378,
+              "price2": 11533,
+              "price3": 10764,
+              "price4": 9226
+            },
+            {
+              "code": "321",
+              "description": "COPITA DE CHOCOLATE X 2.5 KG",
+              "price1": 18460,
+              "price2": 13845,
+              "price3": 12922,
+              "price4": 11345
+            },
+            {
+              "code": "340",
+              "description": "FIBRAS DE SALVADO x 1 Kg",
+              "price1": 7035,
+              "price2": 5276,
+              "price3": 4924,
+              "price4": 4221
+            },
+            {
+              "code": "351",
+              "description": "GRANOLA MIX X 1 KG",
+              "price1": 10211,
+              "price2": 7658,
+              "price3": 7148,
+              "price4": 6127
+            },
+            {
+              "code": "352",
+              "description": "GRANOLA MIX X 1",
+              "price1": 14333,
+              "price2": 10750,
+              "price3": 10033,
+              "price4": 8954
+            },
+            {
+              "code": "350",
+              "description": "GRANOLA CHOCOLATE X 1 KG",
+              "price1": 10577,
+              "price2": 7933,
+              "price3": 7404,
+              "price4": 6647
+            },
+            {
+              "code": "353",
+              "description": "GRANOLA 5 SEMILLAS X 1KG",
+              "price1": 11132,
+              "price2": 8349,
+              "price3": 7792,
+              "price4": 6959
+            },
+            {
+              "code": "361",
+              "description": "OSITOS DE FRUTILLA x 2.5 Kg",
+              "price1": 17812,
+              "price2": 13359,
+              "price3": 12469,
+              "price4": 10688
+            },
+            {
+              "code": "362",
+              "description": "OSITOS DE MIEL x 2.5 Kg",
+              "price1": 15922,
+              "price2": 11941,
+              "price3": 11145,
+              "price4": 9553
+            }
+          ]
+        },
+        {
+          "name": "FRACCIONADOS NUTRIFOOD",
+          "items": [
+            {
+              "code": "364",
+              "description": "FRAC. GRANOLA NF 20X320GR",
+              "price1": 39642,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "365",
+              "description": "FRAC. CEREAL CON AZUCAR NF 11X1KG",
+              "price1": 41805,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "371",
+              "description": "FRAC. CEREAL CON AZUCAR NF 20 X 200GR",
+              "price1": 18672,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "372",
+              "description": "FRAC. CEREAL S/ AZUCAR NF 20 X 150GR",
+              "price1": 16340,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "366",
+              "description": "FRAC. ANILLOS FRUTADOS NF 10X1KG",
+              "price1": 46075,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "368",
+              "description": "FRAC. ANILLOS FRUTADOS NF 20 X 160GR",
+              "price1": 18753,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "367",
+              "description": "FRAC. OSITOS DE MIEL NF 20 X 200GR",
+              "price1": 21999,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "369",
+              "description": "FRAC. COPITA DE CHOCO NF 20 X 200 GR",
+              "price1": 25904,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "370",
+              "description": "FRAC. BOLITA CHOCO NF 20 X 200 GR",
+              "price1": 24432,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "375",
+              "description": "FRAC. BOLITA CHOCO NF 11 X 1K",
+              "price1": 50937,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "373",
+              "description": "FRAC. ALMOHADITA LIMON NF 20 X 180GR",
+              "price1": 27666,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "374",
+              "description": "FRAC. ALMOHADITA FRUTILLA NF 20 X 180GR",
+              "price1": 24754,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "CEREALES",
+      "brands": [
+        {
+          "name": "General",
+          "items": [
+            {
+              "code": "400",
+              "description": "ALPISTE",
+              "price1": 1493,
+              "price2": 1463,
+              "price3": 1316,
+              "price4": null
+            },
+            {
+              "code": "401",
+              "description": "LINO",
+              "price1": 2162,
+              "price2": 2093,
+              "price3": 1883,
+              "price4": null
+            },
+            {
+              "code": "402",
+              "description": "MIJO",
+              "price1": 698,
+              "price2": 674,
+              "price3": 607,
+              "price4": null
+            },
+            {
+              "code": "406",
+              "description": "MIX SEMILLAS",
+              "price1": 4098,
+              "price2": 3715,
+              "price3": 3344,
+              "price4": null
+            },
+            {
+              "code": "407",
+              "description": "QUINOA",
+              "price1": 8100,
+              "price2": 7344,
+              "price3": 6610,
+              "price4": null
+            },
+            {
+              "code": "409",
+              "description": "SALVADO DE AVENA",
+              "price1": 2368,
+              "price2": 2288,
+              "price3": 2059,
+              "price4": null
+            },
+            {
+              "code": "410",
+              "description": "SALVADO DE TRIGO",
+              "price1": 900,
+              "price2": 840,
+              "price3": 756,
+              "price4": null
+            },
+            {
+              "code": "405",
+              "description": "SESAMO",
+              "price1": 3080,
+              "price2": 2940,
+              "price3": 2646,
+              "price4": null
+            },
+            {
+              "code": "404",
+              "description": "SOJA",
+              "price1": 674,
+              "price2": 636,
+              "price3": 572,
+              "price4": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "FORRAJES",
+      "brands": [
+        {
+          "name": "General",
+          "items": [
+            {
+              "code": "451",
+              "description": "AFRECHO X 30KG",
+              "price1": 12294,
+              "price2": 11065,
+              "price3": 10848,
+              "price4": 10245
+            },
+            {
+              "code": "452",
+              "description": "ARVEJA PARTIDA",
+              "price1": 698,
+              "price2": 670,
+              "price3": 603,
+              "price4": null
+            },
+            {
+              "code": "453",
+              "description": "AVENA FORRAJERA X KG",
+              "price1": 562,
+              "price2": null,
+              "price3": 506,
+              "price4": null
+            },
+            {
+              "code": "454",
+              "description": "AVENA PELADA",
+              "price1": 1416,
+              "price2": 1354,
+              "price3": 1219,
+              "price4": null
+            },
+            {
+              "code": "483",
+              "description": "CABALLO PREMIUM X 30 KG",
+              "price1": 16816,
+              "price2": 15297,
+              "price3": 14646,
+              "price4": null
+            },
+            {
+              "code": "455",
+              "description": "CARTAMO",
+              "price1": 1283,
+              "price2": 1240,
+              "price3": 1116,
+              "price4": null
+            },
+            {
+              "code": "456",
+              "description": "COLZA",
+              "price1": 1483,
+              "price2": 1443,
+              "price3": 1298,
+              "price4": null
+            },
+            {
+              "code": "457",
+              "description": "GIRASOL CHICO",
+              "price1": 1193,
+              "price2": 1138,
+              "price3": 1024,
+              "price4": null
+            },
+            {
+              "code": "458",
+              "description": "GIRASOL GRANDE",
+              "price1": 1846,
+              "price2": 1760,
+              "price3": 1584,
+              "price4": null
+            },
+            {
+              "code": "459",
+              "description": "GIRASOL PELADO",
+              "price1": 4418,
+              "price2": 4076,
+              "price3": 3668,
+              "price4": null
+            },
+            {
+              "code": "460",
+              "description": "MAIZ",
+              "price1": 476,
+              "price2": 429,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "486",
+              "description": "MAIZ BT X20KG",
+              "price1": 61950,
+              "price2": 56318,
+              "price3": 51624,
+              "price4": null
+            },
+            {
+              "code": "461",
+              "description": "MAIZ CUARENTIN",
+              "price1": 1718,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "462",
+              "description": "MAIZ LEALES 25 PLUS X20KG",
+              "price1": 44250,
+              "price2": 40228,
+              "price3": 36876,
+              "price4": null
+            },
+            {
+              "code": "463",
+              "description": "MAIZ QUEBRADO X30KG",
+              "price1": 18686,
+              "price2": 16817,
+              "price3": 14014,
+              "price4": null
+            },
+            {
+              "code": "479",
+              "description": "MEZCLA CON PUNTILLA",
+              "price1": 652,
+              "price2": 614,
+              "price3": 498,
+              "price4": null
+            },
+            {
+              "code": "466",
+              "description": "MEZCLA CON VIT. (CANARIO)",
+              "price1": 1677,
+              "price2": 1625,
+              "price3": 1304,
+              "price4": null
+            },
+            {
+              "code": "482",
+              "description": "MEZCLA FINA ESPECIAL (CARDENAL)",
+              "price1": 864,
+              "price2": 810,
+              "price3": 702,
+              "price4": null
+            },
+            {
+              "code": "464",
+              "description": "MEZCLA GALLO CON AVENA PELADA",
+              "price1": 841,
+              "price2": 786,
+              "price3": 683,
+              "price4": null
+            },
+            {
+              "code": "491",
+              "description": "MEZCLA GALLO PREMIUM",
+              "price1": 1118,
+              "price2": 935,
+              "price3": 782,
+              "price4": null
+            },
+            {
+              "code": "468",
+              "description": "MEZCLA GRUESA/MEDIANA",
+              "price1": 720,
+              "price2": 676,
+              "price3": 548,
+              "price4": null
+            },
+            {
+              "code": "470",
+              "description": "MEZCLA P/PAJARO",
+              "price1": 1331,
+              "price2": 1290,
+              "price3": 1043,
+              "price4": null
+            },
+            {
+              "code": "485",
+              "description": "PELLET DE ALFA",
+              "price1": 16305,
+              "price2": null,
+              "price3": 14675,
+              "price4": null
+            },
+            {
+              "code": "471",
+              "description": "PELLET X38KG",
+              "price1": 15812,
+              "price2": null,
+              "price3": 14230,
+              "price4": null
+            },
+            {
+              "code": "403",
+              "description": "SORGO",
+              "price1": 419,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "473",
+              "description": "TRIGO FORRAJERO X KG",
+              "price1": 422,
+              "price2": 380,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "474",
+              "description": "VICIA",
+              "price1": 1260,
+              "price2": 1210,
+              "price3": 1089,
+              "price4": null
+            },
+            {
+              "code": "475",
+              "description": "VITAMINA",
+              "price1": 1898,
+              "price2": 1809,
+              "price3": 1628,
+              "price4": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "LEGUMBRES",
+      "brands": [
+        {
+          "name": "General",
+          "items": [
+            {
+              "code": "700",
+              "description": "ARROZ",
+              "price1": 1779,
+              "price2": 1664,
+              "price3": 1497,
+              "price4": null
+            },
+            {
+              "code": "701",
+              "description": "ARROZ INTEGRAL",
+              "price1": 1650,
+              "price2": 1584,
+              "price3": 1426,
+              "price4": null
+            },
+            {
+              "code": "702",
+              "description": "ARROZ YAMANI",
+              "price1": 2040,
+              "price2": 2026,
+              "price3": 1824,
+              "price4": null
+            },
+            {
+              "code": "703",
+              "description": "AVENA ARROLLADA",
+              "price1": 1737,
+              "price2": 1673,
+              "price3": 1506,
+              "price4": null
+            },
+            {
+              "code": "704",
+              "description": "AVENA INSTANTANEA",
+              "price1": 1797,
+              "price2": 1730,
+              "price3": 1558,
+              "price4": null
+            },
+            {
+              "code": "705",
+              "description": "BURGOL FINO",
+              "price1": 1696,
+              "price2": 1633,
+              "price3": 1470,
+              "price4": null
+            },
+            {
+              "code": "707",
+              "description": "CHALAS X BOLSON",
+              "price1": 49500,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "708",
+              "description": "CHIA",
+              "price1": 7083,
+              "price2": 6644,
+              "price3": 5980,
+              "price4": null
+            },
+            {
+              "code": "726",
+              "description": "FECULA DE MANDIOCA",
+              "price1": null,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "709",
+              "description": "FRANGOLLO",
+              "price1": 2250,
+              "price2": 2167,
+              "price3": 1950,
+              "price4": null
+            },
+            {
+              "code": "710",
+              "description": "GARBANZO",
+              "price1": 1771,
+              "price2": 1716,
+              "price3": 1540,
+              "price4": null
+            },
+            {
+              "code": "711",
+              "description": "HARINA DE ARROZ BLANCO",
+              "price1": 1529,
+              "price2": 1425,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "712",
+              "description": "HARINA DE ARROZ INTEGRAL",
+              "price1": 1560,
+              "price2": 1425,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "713",
+              "description": "HARINA DE ARROZ YAMANI",
+              "price1": 719,
+              "price2": 671,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "714",
+              "description": "HARINA DE GARBANZO",
+              "price1": 1200,
+              "price2": 1102,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "715",
+              "description": "HARINA DE TRIGO INTEGRAL",
+              "price1": 925,
+              "price2": 858,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "716",
+              "description": "HARINA P/TAMALES",
+              "price1": 778,
+              "price2": 685,
+              "price3": 616,
+              "price4": null
+            },
+            {
+              "code": "717",
+              "description": "LENTEJA",
+              "price1": 2985,
+              "price2": 2874,
+              "price3": 2586,
+              "price4": null
+            },
+            {
+              "code": "718",
+              "description": "MAICENA",
+              "price1": 1950,
+              "price2": 1878,
+              "price3": 1690,
+              "price4": null
+            },
+            {
+              "code": "719",
+              "description": "MAIZ MOLIDO AMARILLO",
+              "price1": 1074,
+              "price2": 1035,
+              "price3": 932,
+              "price4": null
+            },
+            {
+              "code": "720",
+              "description": "MAIZ MOLIDO BLANCO",
+              "price1": 2265,
+              "price2": 2250,
+              "price3": 2025,
+              "price4": null
+            },
+            {
+              "code": "721",
+              "description": "PISINGALLO",
+              "price1": 913,
+              "price2": 853,
+              "price3": 784,
+              "price4": null
+            },
+            {
+              "code": "722",
+              "description": "POLENTA",
+              "price1": 875,
+              "price2": 870,
+              "price3": 783,
+              "price4": null
+            },
+            {
+              "code": "723",
+              "description": "POROTO ALUBIA",
+              "price1": 3840,
+              "price2": 3033,
+              "price3": 2730,
+              "price4": null
+            },
+            {
+              "code": "724",
+              "description": "POROTO PALLARES",
+              "price1": 5850,
+              "price2": 5628,
+              "price3": 5265,
+              "price4": null
+            },
+            {
+              "code": "725",
+              "description": "TRIGO PARA LOCRO",
+              "price1": 1914,
+              "price2": 1676,
+              "price3": 1509,
+              "price4": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "CONDIMENTOS",
+      "brands": [
+        {
+          "name": "General",
+          "items": [
+            {
+              "code": "500",
+              "description": "ADOBO P/CARNE",
+              "price1": 3750,
+              "price2": 3600,
+              "price3": 3060,
+              "price4": null
+            },
+            {
+              "code": "501",
+              "description": "ADOBO P/PIZZA",
+              "price1": 3750,
+              "price2": 3600,
+              "price3": 3060,
+              "price4": null
+            },
+            {
+              "code": "502",
+              "description": "AJI CAYENA",
+              "price1": 3750,
+              "price2": 3625,
+              "price3": 3105,
+              "price4": null
+            },
+            {
+              "code": "503",
+              "description": "AJI ROJO",
+              "price1": 3750,
+              "price2": 3625,
+              "price3": 3105,
+              "price4": null
+            },
+            {
+              "code": "504",
+              "description": "ANIS EN GRANO",
+              "price1": 13500,
+              "price2": 12960,
+              "price3": 11340,
+              "price4": null
+            },
+            {
+              "code": "505",
+              "description": "AZUCAR IMPALPABLE",
+              "price1": 2034,
+              "price2": 1953,
+              "price3": 1709,
+              "price4": null
+            },
+            {
+              "code": "506",
+              "description": "AZUCAR MASCABO",
+              "price1": 4125,
+              "price2": 3823,
+              "price3": 3341,
+              "price4": null
+            },
+            {
+              "code": "507",
+              "description": "BICARBONATO",
+              "price1": 3383,
+              "price2": 3202,
+              "price3": 2841,
+              "price4": null
+            },
+            {
+              "code": "523",
+              "description": "CHIMICHURRI",
+              "price1": 3775,
+              "price2": 3600,
+              "price3": 3054,
+              "price4": null
+            },
+            {
+              "code": "508",
+              "description": "COCO RALLADO",
+              "price1": 11250,
+              "price2": 10800,
+              "price3": 9234,
+              "price4": null
+            },
+            {
+              "code": "528",
+              "description": "CACAO AMARGO",
+              "price1": 12619,
+              "price2": 12183,
+              "price3": 11357,
+              "price4": null
+            },
+            {
+              "code": "509",
+              "description": "COMINO COMUN",
+              "price1": 3800,
+              "price2": 3600,
+              "price3": 3094,
+              "price4": null
+            },
+            {
+              "code": "510",
+              "description": "COMINO EN GRANO",
+              "price1": 21420,
+              "price2": 20720,
+              "price3": 18207,
+              "price4": null
+            },
+            {
+              "code": "511",
+              "description": "CONDIMENTO P/ARROZ",
+              "price1": 7500,
+              "price2": 7200,
+              "price3": 6300,
+              "price4": null
+            },
+            {
+              "code": "512",
+              "description": "CURCUMA",
+              "price1": 3750,
+              "price2": 3613,
+              "price3": 3150,
+              "price4": null
+            },
+            {
+              "code": "513",
+              "description": "CURRY",
+              "price1": 9000,
+              "price2": 8640,
+              "price3": 7506,
+              "price4": null
+            },
+            {
+              "code": "514",
+              "description": "NUEZ MOSCADA",
+              "price1": 438,
+              "price2": null,
+              "price3": 380,
+              "price4": null
+            },
+            {
+              "code": "515",
+              "description": "OREGANO",
+              "price1": 3750,
+              "price2": 3600,
+              "price3": 3173,
+              "price4": null
+            },
+            {
+              "code": "516",
+              "description": "OREGANO ESPECIAL",
+              "price1": 7500,
+              "price2": 7200,
+              "price3": 6345,
+              "price4": null
+            },
+            {
+              "code": "524",
+              "description": "PIMENTON ESPAÑOL",
+              "price1": 3200,
+              "price2": 3100,
+              "price3": 2646,
+              "price4": null
+            },
+            {
+              "code": "525",
+              "description": "PIMENTON MORRON",
+              "price1": 3875,
+              "price2": 3725,
+              "price3": 3263,
+              "price4": null
+            },
+            {
+              "code": "527",
+              "description": "PIMIENTA BLANCA",
+              "price1": 2015,
+              "price2": 1885,
+              "price3": 1661,
+              "price4": null
+            },
+            {
+              "code": "519",
+              "description": "PIMIENTA BLANCA PREMIUM",
+              "price1": 7500,
+              "price2": 7200,
+              "price3": 6300,
+              "price4": null
+            },
+            {
+              "code": "520",
+              "description": "POLVO PARA HORNEAR",
+              "price1": 7550,
+              "price2": 7200,
+              "price3": 6165,
+              "price4": null
+            },
+            {
+              "code": "521",
+              "description": "PROVENZAL",
+              "price1": 2873,
+              "price2": 2797,
+              "price3": 2449,
+              "price4": null
+            },
+            {
+              "code": "522",
+              "description": "PROVENZAL PREMIUM",
+              "price1": 4000,
+              "price2": 3750,
+              "price3": 3173,
+              "price4": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "FRUTOS SECOS",
+      "brands": [
+        {
+          "name": "General",
+          "items": [
+            {
+              "code": "600",
+              "description": "ALMENDRAS",
+              "price1": 27750,
+              "price2": 26825,
+              "price3": 25900,
+              "price4": null
+            },
+            {
+              "code": "601",
+              "description": "BANANA",
+              "price1": 16240,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "602",
+              "description": "CIRUELA",
+              "price1": 6393,
+              "price2": 6180,
+              "price3": 5967,
+              "price4": null
+            },
+            {
+              "code": "604",
+              "description": "CIRUELA PRESIDENTA",
+              "price1": 10440,
+              "price2": 10080,
+              "price3": 9720,
+              "price4": null
+            },
+            {
+              "code": "605",
+              "description": "CIRUELA SIN CAROZO",
+              "price1": 10350,
+              "price2": 10005,
+              "price3": 9660,
+              "price4": null
+            },
+            {
+              "code": "606",
+              "description": "FRUTA ABRILLANTADA",
+              "price1": 4323,
+              "price2": 4170,
+              "price3": 4050,
+              "price4": null
+            },
+            {
+              "code": "607",
+              "description": "HIGOS",
+              "price1": 8714,
+              "price2": 8414,
+              "price3": 8113,
+              "price4": null
+            },
+            {
+              "code": "608",
+              "description": "MEDALLONES",
+              "price1": 11864,
+              "price2": 11455,
+              "price3": 11045,
+              "price4": null
+            },
+            {
+              "code": "610",
+              "description": "MIX ENERGETICOS S/C",
+              "price1": 9121,
+              "price2": 8795,
+              "price3": 8469,
+              "price4": null
+            },
+            {
+              "code": "612",
+              "description": "NUEZ PELADA AMBAR",
+              "price1": 17132,
+              "price2": 16497,
+              "price3": 15989,
+              "price4": null
+            },
+            {
+              "code": "617",
+              "description": "NUEZ PELADA LIGHT",
+              "price1": 18482,
+              "price2": 17797,
+              "price3": 16976,
+              "price4": null
+            },
+            {
+              "code": "613",
+              "description": "PASAS CON SEMILLA",
+              "price1": 3525,
+              "price2": 3408,
+              "price3": 3290,
+              "price4": null
+            },
+            {
+              "code": "614",
+              "description": "PASAS SIN SEMILLA",
+              "price1": 5700,
+              "price2": 5510,
+              "price3": 5320,
+              "price4": null
+            },
+            {
+              "code": "615",
+              "description": "PELONES",
+              "price1": 10138,
+              "price2": 9788,
+              "price3": 9439,
+              "price4": null
+            },
+            {
+              "code": "616",
+              "description": "PERAS",
+              "price1": 8700,
+              "price2": 8400,
+              "price3": 8100,
+              "price4": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SNACKS",
+      "brands": [
+        {
+          "name": "General",
+          "items": [
+            {
+              "code": "650",
+              "description": "MANI CON CHOCOLATE",
+              "price1": 8628,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "652",
+              "description": "MANI SABORIZADO",
+              "price1": 4200,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "654",
+              "description": "MANI SIN SAL",
+              "price1": 3900,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "655",
+              "description": "PALITO SALADO",
+              "price1": 4851,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "10672",
+              "description": "MANI SALADO X KG - Mani King",
+              "price1": 4445,
+              "price2": 3855,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "10670",
+              "description": "MANI SIN SAL X KG - Mani King",
+              "price1": 4444,
+              "price2": 3854,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "10669",
+              "description": "MANI TOSTADO C/ CASCARA X KG - Mani King",
+              "price1": 3862,
+              "price2": 3349,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "10671",
+              "description": "PRALINE X KG - Mani King",
+              "price1": 4416,
+              "price2": 3827,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "661",
+              "description": "PASTA DE MANI NATURAL X 485GR X 12U- Mani King",
+              "price1": 29512,
+              "price2": 28038,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "662",
+              "description": "PASTA DE MANI ORIGINAL X 350GR X 12U - Mani King",
+              "price1": 23807,
+              "price2": 22616,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "663",
+              "description": "PASTA DE MANI NATURAL X 3K - Mani King",
+              "price1": 12643,
+              "price2": 12011,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "665",
+              "description": "/",
+              "price1": 26472,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "679",
+              "description": "PASTA DE MANI NATURAL VITA+ 350GR - Mani King",
+              "price1": 25946,
+              "price2": 24647,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "685",
+              "description": "PASTA DE MANI NATURAL X 4K - Mani King",
+              "price1": 15852,
+              "price2": 15059,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "2010",
+              "description": "PISTACHO SALADO MK",
+              "price1": 30055,
+              "price2": 28116,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "670",
+              "description": "FRAC. MANI C/ CHOC MK 15X80 GR",
+              "price1": 23818,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "671",
+              "description": "FRAC. PANCETA MANI CHEFF  MK 15X80 GR",
+              "price1": 10126,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "672",
+              "description": "FRAC. CREMA Y CEB MANI CHEFF  MK 15X80 GR",
+              "price1": 10126,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "673",
+              "description": "FRAC. LIMON Y PIM. MANI CHEFF 15X80 GR",
+              "price1": 10126,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "674",
+              "description": "FRAC. CROCANTE JAMON MANI 15X80 GR",
+              "price1": 13224,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "675",
+              "description": "FRAC. CROCANTE PIZZA MANI 15X80 GR",
+              "price1": 13224,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "676",
+              "description": "FRAC. CROCANTE QUESO MANI 15X80 GR",
+              "price1": 13224,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "2001",
+              "description": "FRAC. SALADO FRITO MK 9X1 KG",
+              "price1": 4704,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "2002",
+              "description": "FRAC. SALADO FRITO S/ PIEL MK 20X350 GR",
+              "price1": 2193,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "2003",
+              "description": "FRAC. SALADO FRITO C/ PIEL MK 20X350 GR",
+              "price1": 2193,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "2004",
+              "description": "FRAC. SALADO FRITO S/ PIEL MK 15X100 GR",
+              "price1": 9934,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "2005",
+              "description": "FRAC. SALADO FRITO C/ PIEL MK 15X100 GR",
+              "price1": 9934,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "2006",
+              "description": "FRAC. TOSTADO S/ SAL MK 20X350 GR",
+              "price1": 2193,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "2007",
+              "description": "FRAC. TOSTADO S/ SAL MK 15X100 GR",
+              "price1": 9934,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "2008",
+              "description": "FRAC. TOSTADO S/ SAL MK 9X1 KG",
+              "price1": 4704,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "2009",
+              "description": "FRAC. PRALINE MK 20X80 GR",
+              "price1": 9197,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "VENENOS",
+      "brands": [
+        {
+          "name": "VENENOS HORMIGAS",
+          "items": [
+            {
+              "code": "1936",
+              "description": "FORMIX CEBO X 100 GR",
+              "price1": 1650,
+              "price2": 1485,
+              "price3": 1155,
+              "price4": null
+            },
+            {
+              "code": "1937",
+              "description": "FORMIX CEBO X 250 GR",
+              "price1": 2749,
+              "price2": 2474,
+              "price3": 1925,
+              "price4": null
+            },
+            {
+              "code": "1938",
+              "description": "FORMIX CEBO X 500 GR",
+              "price1": 5475,
+              "price2": 4928,
+              "price3": 3833,
+              "price4": null
+            },
+            {
+              "code": "1985",
+              "description": "FORMIX L HORMIGUICIDA X 60 CC",
+              "price1": 1013,
+              "price2": 912,
+              "price3": 709,
+              "price4": null
+            },
+            {
+              "code": "1977",
+              "description": "GLACOXAN E LIQ X 120 CC",
+              "price1": 4414,
+              "price2": 3973,
+              "price3": 3090,
+              "price4": null
+            },
+            {
+              "code": "1939",
+              "description": "GLACOXAN E. LIQ X 60 GR",
+              "price1": 3078,
+              "price2": 2770,
+              "price3": 2155,
+              "price4": null
+            },
+            {
+              "code": "1983",
+              "description": "MYRMEC X 100 GR",
+              "price1": 2172,
+              "price2": 1955,
+              "price3": 1521,
+              "price4": null
+            },
+            {
+              "code": "1941",
+              "description": "MYRMEC X 200 GR",
+              "price1": 3446,
+              "price2": 3101,
+              "price3": 2412,
+              "price4": null
+            },
+            {
+              "code": "1943",
+              "description": "TALQUERA FORMIX X 250 GR",
+              "price1": 3880,
+              "price2": 3492,
+              "price3": 2716,
+              "price4": null
+            },
+            {
+              "code": "1944",
+              "description": "TALQUERA GLACOXAN X 250 GR",
+              "price1": 4592,
+              "price2": 4132,
+              "price3": 3214,
+              "price4": null
+            },
+            {
+              "code": "1945",
+              "description": "TALQUERA HORTAL X 250 GR",
+              "price1": 4268,
+              "price2": 3841,
+              "price3": 2987,
+              "price4": null
+            },
+            {
+              "code": "1946",
+              "description": "TALQUERA ROLLER MAX X 250 GR",
+              "price1": 4092,
+              "price2": 3682,
+              "price3": 2864,
+              "price4": null
+            },
+            {
+              "code": "1974",
+              "description": "VELOZAN LIQ X 60 CC",
+              "price1": 6188,
+              "price2": 5570,
+              "price3": 4332,
+              "price4": null
+            }
+          ]
+        },
+        {
+          "name": "VENENOS RATAS",
+          "items": [
+            {
+              "code": "1957",
+              "description": "BRUMOLINE CEBO X 50 GR",
+              "price1": 1545,
+              "price2": 1390,
+              "price3": 1081,
+              "price4": null
+            },
+            {
+              "code": "1959",
+              "description": "RATISADA LIQ. X 1 LT",
+              "price1": 4997,
+              "price2": 4497,
+              "price3": 3997,
+              "price4": null
+            },
+            {
+              "code": "1960",
+              "description": "RATISADA LIQ. X 500 CC",
+              "price1": 3917,
+              "price2": 3526,
+              "price3": 3134,
+              "price4": null
+            },
+            {
+              "code": "1961",
+              "description": "TERMIXAN BLOQUES X 1 KG",
+              "price1": 35212,
+              "price2": 31691,
+              "price3": 24648,
+              "price4": null
+            },
+            {
+              "code": "1962",
+              "description": "TERMIXAN BLOQUES X 90 GR",
+              "price1": 7464,
+              "price2": 6718,
+              "price3": 5225,
+              "price4": null
+            },
+            {
+              "code": "1963",
+              "description": "TERMIXAN X 25 KG",
+              "price1": 200738,
+              "price2": 180662,
+              "price3": 140516,
+              "price4": null
+            },
+            {
+              "code": "1965",
+              "description": "TRAMPAS LAUCHA MADERA",
+              "price1": 1648,
+              "price2": 1483,
+              "price3": 1154,
+              "price4": null
+            },
+            {
+              "code": "1966",
+              "description": "TRAMPAS RATAS MADERA",
+              "price1": 3388,
+              "price2": 3049,
+              "price3": 2371,
+              "price4": null
+            },
+            {
+              "code": "1968",
+              "description": "ULTRA RATICIDA 30 SOBRES X 50 GR",
+              "price1": 1165,
+              "price2": 1048,
+              "price3": 932,
+              "price4": null
+            }
+          ]
+        },
+        {
+          "name": "VENENOS MOSCAS Y CUCARACHAS",
+          "items": [
+            {
+              "code": "1948",
+              "description": "CUCAXAN CEBADERA X 6 UN",
+              "price1": 2575,
+              "price2": 2317,
+              "price3": 1802,
+              "price4": null
+            },
+            {
+              "code": "1949",
+              "description": "CUCAXAN JERINGA X 6 GR",
+              "price1": 3375,
+              "price2": 3038,
+              "price3": 2362,
+              "price4": null
+            },
+            {
+              "code": "1950",
+              "description": "GERMANI GEL JERINGA X 5 GR",
+              "price1": 2919,
+              "price2": 2627,
+              "price3": 2043,
+              "price4": null
+            },
+            {
+              "code": "1984",
+              "description": "GLACOXAN FIPROFENO X 60 CC",
+              "price1": 6681,
+              "price2": 6013,
+              "price3": 4676,
+              "price4": null
+            },
+            {
+              "code": "1975",
+              "description": "ULTRA JERINGA X 6 GR",
+              "price1": 873,
+              "price2": 786,
+              "price3": 699,
+              "price4": null
+            },
+            {
+              "code": "1954",
+              "description": "ULTRA MOSQ. 18 SOB X 30 GR",
+              "price1": 2092,
+              "price2": 1883,
+              "price3": 1464,
+              "price4": null
+            },
+            {
+              "code": "1955",
+              "description": "ULTRABOOM CASITAS X 2 UN",
+              "price1": 4736,
+              "price2": 4263,
+              "price3": 3315,
+              "price4": null
+            }
+          ]
+        },
+        {
+          "name": "VENENOS INSECTOS",
+          "items": [
+            {
+              "code": "946",
+              "description": "CURABICHERA PLATA AM NORT",
+              "price1": 7818,
+              "price2": 7036,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "1922",
+              "description": "FLUIDO TRIUNFO X 1 LT",
+              "price1": 9198,
+              "price2": 8278,
+              "price3": 6439,
+              "price4": null
+            },
+            {
+              "code": "1923",
+              "description": "FLUIDO TRIUNFO X 500 CC",
+              "price1": 5087,
+              "price2": 4578,
+              "price3": 3561,
+              "price4": null
+            },
+            {
+              "code": "1924",
+              "description": "FUMIXAN 50 GR X 1 PAST",
+              "price1": 9586,
+              "price2": 8628,
+              "price3": 6710,
+              "price4": null
+            },
+            {
+              "code": "1925",
+              "description": "GATILLO PARA PULVERIZADOR",
+              "price1": 1151,
+              "price2": 1036,
+              "price3": 806,
+              "price4": null
+            },
+            {
+              "code": "1926",
+              "description": "GLEX ACOPIO X 90 GR",
+              "price1": 15459,
+              "price2": 13913,
+              "price3": 10822,
+              "price4": null
+            },
+            {
+              "code": "1951",
+              "description": "K-OTHRINA X 15 CC",
+              "price1": 1787,
+              "price2": 1608,
+              "price3": 1251,
+              "price4": null
+            },
+            {
+              "code": "1928",
+              "description": "PULVERIZADOR X 1 LT",
+              "price1": 7911,
+              "price2": 7120,
+              "price3": 5538,
+              "price4": null
+            },
+            {
+              "code": "1929",
+              "description": "PULVERIZADOR X 1",
+              "price1": 30458,
+              "price2": 27412,
+              "price3": 21321,
+              "price4": null
+            },
+            {
+              "code": "1932",
+              "description": "PULVERIZADOR X 12 LT",
+              "price1": 186557,
+              "price2": null,
+              "price3": 130590,
+              "price4": null
+            },
+            {
+              "code": "1933",
+              "description": "PULVERIZADOR X 16 LT",
+              "price1": 197686,
+              "price2": null,
+              "price3": 138380,
+              "price4": null
+            },
+            {
+              "code": "1934",
+              "description": "PULVERIZADOR X 20 LT",
+              "price1": 201201,
+              "price2": null,
+              "price3": 140840,
+              "price4": null
+            },
+            {
+              "code": "1930",
+              "description": "PULVERIZADOR X 5 LT",
+              "price1": 82882,
+              "price2": null,
+              "price3": 58017,
+              "price4": null
+            },
+            {
+              "code": "1931",
+              "description": "PULVERIZADOR X 9 LT",
+              "price1": 94597,
+              "price2": 85136,
+              "price3": 66218,
+              "price4": null
+            },
+            {
+              "code": "1952",
+              "description": "SUPER FLOW X 15 CC",
+              "price1": 681,
+              "price2": 612,
+              "price3": 476,
+              "price4": null
+            },
+            {
+              "code": "1953",
+              "description": "SUPER FLOW X 60 CC",
+              "price1": 2896,
+              "price2": 2606,
+              "price3": 2027,
+              "price4": null
+            },
+            {
+              "code": "1953",
+              "description": "SUPER FLOW X 60 CC",
+              "price1": 2896,
+              "price2": 2606,
+              "price3": 2027,
+              "price4": null
+            },
+            {
+              "code": "1978",
+              "description": "VELOXAN BTI LAVARCIDA X 30 CC",
+              "price1": 4675,
+              "price2": 4208,
+              "price3": 3273,
+              "price4": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ACCESORIOS",
+      "brands": [
+        {
+          "name": "PECES",
+          "items": [
+            {
+              "code": "750",
+              "description": "ANTICLORO BONAQUA x 80cc",
+              "price1": 1394,
+              "price2": 1255,
+              "price3": 976,
+              "price4": null
+            },
+            {
+              "code": "751",
+              "description": "AZUL DE METILENO x 50 cc",
+              "price1": 1549,
+              "price2": 1394,
+              "price3": 1085,
+              "price4": null
+            },
+            {
+              "code": "760",
+              "description": "MAC SHULET TROPICAL X 10 GR",
+              "price1": 2860,
+              "price2": 2574,
+              "price3": 2288,
+              "price4": null
+            },
+            {
+              "code": "761",
+              "description": "PIEDRAS MULTICOLORES x 500 GR",
+              "price1": 2048,
+              "price2": 1843,
+              "price3": 1433,
+              "price4": null
+            },
+            {
+              "code": "766",
+              "description": "SHULET AGUA FRIA X 1 KG",
+              "price1": 68707,
+              "price2": null,
+              "price3": 54967,
+              "price4": null
+            },
+            {
+              "code": "767",
+              "description": "SHULET AGUA FRIA X 20 GR",
+              "price1": 4518,
+              "price2": 4066,
+              "price3": 3615,
+              "price4": null
+            },
+            {
+              "code": "768",
+              "description": "SHULET AGUA FRIA X 40 GR",
+              "price1": 7875,
+              "price2": 7087,
+              "price3": 6300,
+              "price4": null
+            },
+            {
+              "code": "769",
+              "description": "SHULET AGUA FRIA X 9 GR",
+              "price1": 2485,
+              "price2": 2237,
+              "price3": 1988,
+              "price4": null
+            }
+          ]
+        },
+        {
+          "name": "PAJAROS",
+          "items": [
+            {
+              "code": "800",
+              "description": "ANTIBIOTICO X 250 GR",
+              "price1": null,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "801",
+              "description": "ANTIBIOTICO X 500 GR",
+              "price1": null,
+              "price2": null,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "802",
+              "description": "ANTIBIOTICO X KG",
+              "price1": 37384,
+              "price2": 33645,
+              "price3": 26168,
+              "price4": null
+            },
+            {
+              "code": "803",
+              "description": "BAÐERA PLASTICA N░ 1",
+              "price1": 554,
+              "price2": 499,
+              "price3": 388,
+              "price4": null
+            },
+            {
+              "code": "804",
+              "description": "BAÐERA PLASTICA N░ 2",
+              "price1": 653,
+              "price2": 588,
+              "price3": 457,
+              "price4": null
+            },
+            {
+              "code": "805",
+              "description": "BAÐERA PLASTICA N░ 3",
+              "price1": 911,
+              "price2": 820,
+              "price3": 637,
+              "price4": null
+            },
+            {
+              "code": "806",
+              "description": "BAÐERA PLASTICA N░ 4",
+              "price1": 1369,
+              "price2": 1232,
+              "price3": 958,
+              "price4": null
+            },
+            {
+              "code": "807",
+              "description": "BASE PLASTICA BEBEDERO",
+              "price1": 1998,
+              "price2": 1798,
+              "price3": 1398,
+              "price4": null
+            },
+            {
+              "code": "808",
+              "description": "BEBEDERO CON ALETA N░ 1",
+              "price1": 381,
+              "price2": 343,
+              "price3": 267,
+              "price4": null
+            },
+            {
+              "code": "809",
+              "description": "BEBEDERO CON ALETA N░ 2",
+              "price1": 532,
+              "price2": 479,
+              "price3": 372,
+              "price4": null
+            },
+            {
+              "code": "810",
+              "description": "BEBEDERO CON ALETA N░ 3",
+              "price1": 637,
+              "price2": 573,
+              "price3": 446,
+              "price4": null
+            },
+            {
+              "code": "811",
+              "description": "BEBEDERO CON GANCHO N░ 1",
+              "price1": 441,
+              "price2": 397,
+              "price3": 309,
+              "price4": null
+            },
+            {
+              "code": "812",
+              "description": "BEBEDERO CON GANCHO N░ 2",
+              "price1": 465,
+              "price2": 419,
+              "price3": 326,
+              "price4": null
+            },
+            {
+              "code": "813",
+              "description": "BEBEDERO CON GANCHO N░ 3",
+              "price1": 538,
+              "price2": 484,
+              "price3": 377,
+              "price4": null
+            },
+            {
+              "code": "814",
+              "description": "BEBEDERO MEDIA CAÐA",
+              "price1": 536,
+              "price2": 482,
+              "price3": 375,
+              "price4": null
+            },
+            {
+              "code": "815",
+              "description": "BEBEDERO PLASTICO X 3 LT",
+              "price1": 5963,
+              "price2": 5367,
+              "price3": 4174,
+              "price4": null
+            },
+            {
+              "code": "817",
+              "description": "BEBEDERO TUBO N░ 1",
+              "price1": 868,
+              "price2": 781,
+              "price3": 607,
+              "price4": null
+            },
+            {
+              "code": "818",
+              "description": "BEBEDERO TUBO N░ 2",
+              "price1": 1004,
+              "price2": 904,
+              "price3": 703,
+              "price4": null
+            },
+            {
+              "code": "819",
+              "description": "BEBEDERO TUBO N░ 3",
+              "price1": 1547,
+              "price2": 1392,
+              "price3": 1083,
+              "price4": null
+            },
+            {
+              "code": "820",
+              "description": "BEBEDERO TUBO N░ 4",
+              "price1": 2206,
+              "price2": 1985,
+              "price3": 1544,
+              "price4": null
+            },
+            {
+              "code": "822",
+              "description": "COLOR ROJO POTENCIADO X KG",
+              "price1": 11042,
+              "price2": 9937,
+              "price3": 7730,
+              "price4": null
+            },
+            {
+              "code": "823",
+              "description": "COMEDERO PARA GALLO",
+              "price1": 1136,
+              "price2": 1022,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "824",
+              "description": "COMEDERO PLASTICO X 3 LT",
+              "price1": 5963,
+              "price2": 5367,
+              "price3": 4174,
+              "price4": null
+            },
+            {
+              "code": "825",
+              "description": "GUGUI PASTON AL HUEVO X KG",
+              "price1": 4102,
+              "price2": 3692,
+              "price3": 2871,
+              "price4": null
+            },
+            {
+              "code": "828",
+              "description": "JAULA CHICA",
+              "price1": 21786,
+              "price2": 19607,
+              "price3": 15250,
+              "price4": null
+            },
+            {
+              "code": "1030",
+              "description": "JAULA CHINA MED FANTASIA DOBLE",
+              "price1": 25412,
+              "price2": 22870,
+              "price3": 17788,
+              "price4": null
+            },
+            {
+              "code": "1031",
+              "description": "JAULA CHINA MEDIANA ARCO",
+              "price1": 22871,
+              "price2": 20584,
+              "price3": 16010,
+              "price4": null
+            },
+            {
+              "code": "1032",
+              "description": "JAULA CHINA MEDIANA CASA",
+              "price1": 22871,
+              "price2": 20584,
+              "price3": 16010,
+              "price4": null
+            },
+            {
+              "code": "829",
+              "description": "JAULA CRIADORA 2D2N4V",
+              "price1": 37790,
+              "price2": 34011,
+              "price3": 26453,
+              "price4": null
+            },
+            {
+              "code": "830",
+              "description": "JAULA CRIADORA 2D2N6V/NIDO EXT",
+              "price1": 45508,
+              "price2": 40957,
+              "price3": 31855,
+              "price4": null
+            },
+            {
+              "code": "831",
+              "description": "JAULA GRANDE",
+              "price1": 32990,
+              "price2": 29690,
+              "price3": 23093,
+              "price4": null
+            },
+            {
+              "code": "832",
+              "description": "JAULA LORERA GRANDE",
+              "price1": 68580,
+              "price2": 61722,
+              "price3": 48006,
+              "price4": null
+            },
+            {
+              "code": "833",
+              "description": "JAULA LORERA MEDIANA",
+              "price1": 51843,
+              "price2": 46658,
+              "price3": 36290,
+              "price4": null
+            },
+            {
+              "code": "837",
+              "description": "JAULA VOLADORA 50X30X30",
+              "price1": 58872,
+              "price2": 52984,
+              "price3": 41211,
+              "price4": null
+            },
+            {
+              "code": "838",
+              "description": "JAULA VOLADORA 75x30x30 c/4",
+              "price1": 74853,
+              "price2": 67367,
+              "price3": 52399,
+              "price4": null
+            },
+            {
+              "code": "839",
+              "description": "JAULIN ALAMBRE N░ 1",
+              "price1": 14700,
+              "price2": 13230,
+              "price3": 10290,
+              "price4": null
+            },
+            {
+              "code": "840",
+              "description": "JAULIN ALAMBRE N░ 2",
+              "price1": 20334,
+              "price2": 18301,
+              "price3": 14234,
+              "price4": null
+            },
+            {
+              "code": "841",
+              "description": "JAULON C/PIE 3 DIVISIONES",
+              "price1": 28932,
+              "price2": 26039,
+              "price3": 20253,
+              "price4": null
+            },
+            {
+              "code": "842",
+              "description": "JAULON C/PIE 5 DIVISIONES",
+              "price1": 43422,
+              "price2": 39080,
+              "price3": 30396,
+              "price4": null
+            },
+            {
+              "code": "844",
+              "description": "NIDO EXTERNO ALAMBRE",
+              "price1": 6963,
+              "price2": 6267,
+              "price3": 4874,
+              "price4": null
+            },
+            {
+              "code": "845",
+              "description": "NIDO INTERNO PLASTICO",
+              "price1": 1729,
+              "price2": 1557,
+              "price3": 1211,
+              "price4": null
+            }
+          ]
+        },
+        {
+          "name": "HAMSTERS",
+          "items": [
+            {
+              "code": "1969",
+              "description": "BEBEDERO HAMSTER - PLASTICO",
+              "price1": 4484,
+              "price2": 4035,
+              "price3": 3139,
+              "price4": null
+            },
+            {
+              "code": "1970",
+              "description": "BEBEDERO HAMSTER - VIDRIO",
+              "price1": 8554,
+              "price2": 7699,
+              "price3": 5988,
+              "price4": null
+            },
+            {
+              "code": "1971",
+              "description": "HAMSTERA c/ BANDEJA - ROLLER",
+              "price1": 21037,
+              "price2": 18933,
+              "price3": 14726,
+              "price4": null
+            }
+          ]
+        },
+        {
+          "name": "PERROS Y GATOS",
+          "items": [
+            {
+              "code": "904",
+              "description": "BAÐO BAPS X 120 CC",
+              "price1": 6420,
+              "price2": 5778,
+              "price3": 4494,
+              "price4": null
+            },
+            {
+              "code": "905",
+              "description": "BAÐO BAPS X 70 CC",
+              "price1": 4860,
+              "price2": 4374,
+              "price3": 3402,
+              "price4": null
+            },
+            {
+              "code": "906",
+              "description": "BAÐO GLACOXAN x  120 cc",
+              "price1": 8542,
+              "price2": 7688,
+              "price3": 5980,
+              "price4": null
+            },
+            {
+              "code": "907",
+              "description": "BAÐO GLACOXAN x 70 cc",
+              "price1": 7002,
+              "price2": 6301,
+              "price3": 4901,
+              "price4": null
+            },
+            {
+              "code": "903",
+              "description": "BANDEJA SANITARIA",
+              "price1": 2146,
+              "price2": 1931,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "908",
+              "description": "BLISTER FINO P/ GATO x 12",
+              "price1": 9164,
+              "price2": 8248,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "909",
+              "description": "CADENA DE VAREO FINA",
+              "price1": 2042,
+              "price2": 1837,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "910",
+              "description": "CADENA DE VAREO GRUESA",
+              "price1": 5046,
+              "price2": 4541,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "913",
+              "description": "CARDINA PLASTICA MEDIANA",
+              "price1": 2088,
+              "price2": 1879,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "914",
+              "description": "CEPILLO DOBLE CHICO",
+              "price1": 2378,
+              "price2": 2140,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "915",
+              "description": "CEPILLO DOBLE GRANDE",
+              "price1": 3480,
+              "price2": 3132,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "916",
+              "description": "CEPILLO DOBLE MEDIANO",
+              "price1": 2656,
+              "price2": 2391,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "918",
+              "description": "COLLAR AHORQUE CHICO",
+              "price1": 2175,
+              "price2": 1958,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "919",
+              "description": "COLLAR AHORQUE GRANDE",
+              "price1": 3480,
+              "price2": 3132,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "920",
+              "description": "COLLAR AHORQUE MEDIANO",
+              "price1": 2900,
+              "price2": 2610,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "921",
+              "description": "COLLAR ANTIPULGAS CHICO",
+              "price1": 7129,
+              "price2": 6416,
+              "price3": 5703,
+              "price4": null
+            },
+            {
+              "code": "922",
+              "description": "COLLAR ANTIPULGAS GATO",
+              "price1": 7828,
+              "price2": 7045,
+              "price3": 6262,
+              "price4": null
+            },
+            {
+              "code": "923",
+              "description": "COLLAR ANTIPULGAS GRANDE",
+              "price1": 8753,
+              "price2": 7877,
+              "price3": 7002,
+              "price4": null
+            },
+            {
+              "code": "924",
+              "description": "COLLAR ANTIPULGAS MEDIANO",
+              "price1": 7660,
+              "price2": 6894,
+              "price3": 6128,
+              "price4": null
+            },
+            {
+              "code": "925",
+              "description": "COLLAR N░ 1 ( 29 cm)",
+              "price1": 1166,
+              "price2": 1049,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "926",
+              "description": "COLLAR N░ 2 (34 cm)",
+              "price1": 1521,
+              "price2": 1369,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "927",
+              "description": "COLLAR N░ 3 ( 38 cm)",
+              "price1": 1601,
+              "price2": 1441,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "928",
+              "description": "COLLAR N░ 4 ( 43 cm)",
+              "price1": 2192,
+              "price2": 1973,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "929",
+              "description": "COLLAR N░ 5 ( 46 cm)",
+              "price1": 2262,
+              "price2": 2036,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "930",
+              "description": "COLLAR N░ 6 ( 52 cm)",
+              "price1": 2714,
+              "price2": 2443,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "931",
+              "description": "COLLAR N░ 7 ( 58 cm)",
+              "price1": 2801,
+              "price2": 2521,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "936",
+              "description": "COMEDERO CHICO",
+              "price1": 578,
+              "price2": 520,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "937",
+              "description": "COMEDERO DOBLE",
+              "price1": 1945,
+              "price2": 1750,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "938",
+              "description": "COMEDERO GRANDE",
+              "price1": 2130,
+              "price2": 1917,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "939",
+              "description": "COMEDERO MEDIANO",
+              "price1": 1419,
+              "price2": 1277,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "940",
+              "description": "CONJUNTO CHICO",
+              "price1": 1395,
+              "price2": 1256,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "941",
+              "description": "CONJUNTO MEDIANO",
+              "price1": 1860,
+              "price2": 1674,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "942",
+              "description": "CORREA N░ 1",
+              "price1": 2900,
+              "price2": 2610,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "943",
+              "description": "CORREA N░ 2",
+              "price1": 3596,
+              "price2": 3236,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "944",
+              "description": "CORREA N░ 3",
+              "price1": 4698,
+              "price2": 4228,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "947",
+              "description": "ECTHOL X 120 CC",
+              "price1": 11637,
+              "price2": 10473,
+              "price3": 8146,
+              "price4": null
+            },
+            {
+              "code": "948",
+              "description": "ECTHOL x 70 CC",
+              "price1": 7113,
+              "price2": 6402,
+              "price3": 4979,
+              "price4": null
+            },
+            {
+              "code": "950",
+              "description": "HUESITO N░ 3",
+              "price1": 742,
+              "price2": 668,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "951",
+              "description": "HUESITO N░ 5",
+              "price1": 1369,
+              "price2": 1232,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "952",
+              "description": "HUESITO N░ 7",
+              "price1": 2355,
+              "price2": 2119,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "953",
+              "description": "KIT P/ MASCOTA",
+              "price1": 3706,
+              "price2": 3335,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "954",
+              "description": "LOCION X 130 CC",
+              "price1": 9509,
+              "price2": 8559,
+              "price3": 6657,
+              "price4": null
+            },
+            {
+              "code": "955",
+              "description": "LOCION X 50 CC",
+              "price1": 1847,
+              "price2": 1662,
+              "price3": 1293,
+              "price4": null
+            },
+            {
+              "code": "957",
+              "description": "OREJAS",
+              "price1": 688,
+              "price2": 619,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "958",
+              "description": "PALITA SANITARIA",
+              "price1": 438,
+              "price2": 394,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "1027",
+              "description": "PASTILLA PULGUICIDA 2",
+              "price1": 6329,
+              "price2": 5754,
+              "price3": 4430,
+              "price4": null
+            },
+            {
+              "code": "1033",
+              "description": "PASTILLA PULGUICIDA 20KG A 40KG",
+              "price1": 13339,
+              "price2": 12127,
+              "price3": 9338,
+              "price4": null
+            },
+            {
+              "code": "1028",
+              "description": "PASTILLA PULGUICIDA 40KG A 80KG",
+              "price1": 23526,
+              "price2": 21389,
+              "price3": 16469,
+              "price4": null
+            },
+            {
+              "code": "1029",
+              "description": "PASTILLA PULGUICIDA GATO 3KG A 6KG",
+              "price1": 7031,
+              "price2": 6392,
+              "price3": 4922,
+              "price4": null
+            },
+            {
+              "code": "962",
+              "description": "PIPETA CHICA",
+              "price1": 2602,
+              "price2": 2342,
+              "price3": 1821,
+              "price4": null
+            },
+            {
+              "code": "963",
+              "description": "PIPETA EXTRA GRANDE",
+              "price1": 3792,
+              "price2": 3413,
+              "price3": 2655,
+              "price4": null
+            },
+            {
+              "code": "964",
+              "description": "PIPETA GATO",
+              "price1": 2713,
+              "price2": 2441,
+              "price3": 1899,
+              "price4": null
+            },
+            {
+              "code": "965",
+              "description": "PIPETA GRANDE",
+              "price1": 3431,
+              "price2": 3088,
+              "price3": 2402,
+              "price4": null
+            },
+            {
+              "code": "966",
+              "description": "PIPETA MEDIANA",
+              "price1": 2838,
+              "price2": 2554,
+              "price3": 1987,
+              "price4": null
+            },
+            {
+              "code": "997",
+              "description": "POLAR ESTAMPADO 1",
+              "price1": 2640,
+              "price2": 2464,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "998",
+              "description": "POLAR ESTAMPADO 2",
+              "price1": 2760,
+              "price2": 2576,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "999",
+              "description": "POLAR ESTAMPADO 3",
+              "price1": 3000,
+              "price2": 2800,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "1000",
+              "description": "POLAR ESTAMPADO 4",
+              "price1": 3840,
+              "price2": 3584,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "1001",
+              "description": "POLAR ESTAMPADO 5",
+              "price1": 4680,
+              "price2": 4368,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "1002",
+              "description": "POLAR ESTAMPADO 6",
+              "price1": 5640,
+              "price2": 5264,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "1003",
+              "description": "POLAR ESTAMPADO 7",
+              "price1": 6480,
+              "price2": 6048,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "1004",
+              "description": "POLAR ESTAMPADO 8",
+              "price1": 7800,
+              "price2": 7280,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "1005",
+              "description": "POLAR ESTAMPADO 9",
+              "price1": 8040,
+              "price2": 7504,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "1006",
+              "description": "POLAR ESTAMPADO 10",
+              "price1": 8280,
+              "price2": 7728,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "1007",
+              "description": "POLAR ESTAMPADO 11",
+              "price1": 9000,
+              "price2": 8400,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "1008",
+              "description": "POLAR ESTAMPADO 12",
+              "price1": 9720,
+              "price2": 9072,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "967",
+              "description": "POLAR N░ 0",
+              "price1": 1011,
+              "price2": 910,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "968",
+              "description": "POLAR N░ 1",
+              "price1": 1702,
+              "price2": 1532,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "977",
+              "description": "POLAR N░ 10",
+              "price1": 5350,
+              "price2": 4815,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "978",
+              "description": "POLAR N░ 11",
+              "price1": 5747,
+              "price2": 5172,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "979",
+              "description": "POLAR N░ 12",
+              "price1": 6272,
+              "price2": 5645,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "969",
+              "description": "POLAR N░ 2",
+              "price1": 2202,
+              "price2": 1981,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "970",
+              "description": "POLAR N░ 3",
+              "price1": 2554,
+              "price2": 2298,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "971",
+              "description": "POLAR N░ 4",
+              "price1": 2899,
+              "price2": 2609,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "972",
+              "description": "POLAR N░ 5",
+              "price1": 3302,
+              "price2": 2972,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "973",
+              "description": "POLAR N░ 6",
+              "price1": 3699,
+              "price2": 3329,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "974",
+              "description": "POLAR N░ 7",
+              "price1": 4070,
+              "price2": 3663,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "975",
+              "description": "POLAR N░ 8",
+              "price1": 4525,
+              "price2": 4072,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "976",
+              "description": "POLAR N░ 9",
+              "price1": 4922,
+              "price2": 4429,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "980",
+              "description": "PRETAL N░ 1",
+              "price1": 1740,
+              "price2": 1566,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "981",
+              "description": "PRETAL N░ 2",
+              "price1": 1856,
+              "price2": 1670,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "982",
+              "description": "PRETAL N░ 3",
+              "price1": 2523,
+              "price2": 2271,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "983",
+              "description": "PRETAL N░ 4",
+              "price1": 2556,
+              "price2": 2300,
+              "price3": null,
+              "price4": null
+            },
+            {
+              "code": "985",
+              "description": "REPELENTE CON GATILLO",
+              "price1": 6098,
+              "price2": 5488,
+              "price3": 4269,
+              "price4": null
+            },
+            {
+              "code": "986",
+              "description": "REPELENTE SIN GATILLO - REPUESTO",
+              "price1": 5073,
+              "price2": 4566,
+              "price3": 3551,
+              "price4": null
+            },
+            {
+              "code": "987",
+              "description": "SHAMPOO OSSPRET  2 EN 1 X 250 CC",
+              "price1": 7984,
+              "price2": 7186,
+              "price3": 6387,
+              "price4": null
+            },
+            {
+              "code": "989",
+              "description": "SHAMPOO OSSPRET CACHORRO X 250 CC",
+              "price1": 7357,
+              "price2": 6621,
+              "price3": 5886,
+              "price4": null
+            },
+            {
+              "code": "990",
+              "description": "SHAMPOO OSSPRET TONALIZADOR X 250 CC",
+              "price1": 6812,
+              "price2": 6131,
+              "price3": 5450,
+              "price4": null
+            },
+            {
+              "code": "992",
+              "description": "SHAMPOO OSSPRET TRAD. X 250 CC",
+              "price1": 7417,
+              "price2": 6675,
+              "price3": 5934,
+              "price4": null
+            },
+            {
+              "code": "993",
+              "description": "TALQUERA PULGUICIDA WASH",
+              "price1": 2404,
+              "price2": 2164,
+              "price3": null,
+              "price4": null
+            }
+          ]
+        },
+        {
+          "name": "PLANTAS",
+          "items": [
+            {
+              "code": "1978",
+              "description": "BIOFERTILIZANTE X 3 KG",
+              "price1": 4675,
+              "price2": 4208,
+              "price3": 3273,
+              "price4": null
+            },
+            {
+              "code": "1012",
+              "description": "BOLS N░ 12",
+              "price1": 342,
+              "price2": 308,
+              "price3": 239,
+              "price4": null
+            },
+            {
+              "code": "1015",
+              "description": "BOLS N░ 15",
+              "price1": 391,
+              "price2": 352,
+              "price3": 274,
+              "price4": null
+            },
+            {
+              "code": "1018",
+              "description": "BOLS N░ 18",
+              "price1": 583,
+              "price2": 525,
+              "price3": 408,
+              "price4": null
+            },
+            {
+              "code": "1021",
+              "description": "BOLS N░ 21",
+              "price1": 974,
+              "price2": 876,
+              "price3": 682,
+              "price4": null
+            },
+            {
+              "code": "1024",
+              "description": "BOLS N░ 24",
+              "price1": 1435,
+              "price2": 1291,
+              "price3": 1004,
+              "price4": null
+            },
+            {
+              "code": "1900",
+              "description": "D-SIST GLACOXAN x 30 cc x 24 u",
+              "price1": 6585,
+              "price2": 5927,
+              "price3": 4610,
+              "price4": null
+            },
+            {
+              "code": "1901",
+              "description": "D-SIST GLACOXAN x 60 cc x 24 u",
+              "price1": 8912,
+              "price2": 8021,
+              "price3": 6239,
+              "price4": null
+            },
+            {
+              "code": "1902",
+              "description": "ESCOBAS BARREHOJAS plástica",
+              "price1": 2746,
+              "price2": 2472,
+              "price3": 1922,
+              "price4": null
+            },
+            {
+              "code": "1903",
+              "description": "FERTIFOX FLORACION x 200 cc",
+              "price1": 6045,
+              "price2": 5441,
+              "price3": 4231,
+              "price4": null
+            },
+            {
+              "code": "1904",
+              "description": "FERTIFOX FOLLAJE 200 cc",
+              "price1": 6037,
+              "price2": 5434,
+              "price3": 4226,
+              "price4": null
+            },
+            {
+              "code": "1905",
+              "description": "FERTIFOX HORM. ENRAIZAR x 75 gr",
+              "price1": 9957,
+              "price2": 8961,
+              "price3": 6970,
+              "price4": null
+            },
+            {
+              "code": "1906",
+              "description": "FERTIFOX HORMONAS x 200 cc",
+              "price1": 6037,
+              "price2": 5434,
+              "price3": 4226,
+              "price4": null
+            },
+            {
+              "code": "1907",
+              "description": "FERTILIZANTE TRIPLE 15 X 1 KG",
+              "price1": 8654,
+              "price2": 7789,
+              "price3": 6058,
+              "price4": null
+            },
+            {
+              "code": "1908",
+              "description": "FERTILIZANTE TRIPLE 15 X 500 GR",
+              "price1": 4509,
+              "price2": 4058,
+              "price3": 3156,
+              "price4": null
+            },
+            {
+              "code": "1982",
+              "description": "FUNGOXAN funguicida sist. x30cc",
+              "price1": 6891,
+              "price2": 6202,
+              "price3": 4824,
+              "price4": null
+            },
+            {
+              "code": "1909",
+              "description": "FUNGOXAN funguicida sist. x60cc",
+              "price1": 9107,
+              "price2": 8196,
+              "price3": 6375,
+              "price4": null
+            },
+            {
+              "code": "1910",
+              "description": "GANCHOS LISOS PLASTICOS",
+              "price1": 591,
+              "price2": 532,
+              "price3": 414,
+              "price4": null
+            },
+            {
+              "code": "1911",
+              "description": "HERBICIDA TOTAL X 100 CC",
+              "price1": 10355,
+              "price2": 9319,
+              "price3": 7248,
+              "price4": null
+            },
+            {
+              "code": "1912",
+              "description": "HERBICIDA TOTAL X 200 CC",
+              "price1": 3319,
+              "price2": 2987,
+              "price3": 2323,
+              "price4": null
+            },
+            {
+              "code": "1120",
+              "description": "JARDINERA MINI N░ 20",
+              "price1": 789,
+              "price2": 710,
+              "price3": 552,
+              "price4": null
+            },
+            {
+              "code": "1136",
+              "description": "JARDINERA MINI N░ 36",
+              "price1": 1519,
+              "price2": 1367,
+              "price3": 1063,
+              "price4": null
+            },
+            {
+              "code": "1166",
+              "description": "JARDINERA Marisa N║ 27",
+              "price1": 1937,
+              "price2": 1743,
+              "price3": 1356,
+              "price4": null
+            },
+            {
+              "code": "1135",
+              "description": "JARDINERA N░ 35",
+              "price1": 2389,
+              "price2": 2150,
+              "price3": 1672,
+              "price4": null
+            },
+            {
+              "code": "1140",
+              "description": "JARDINERA Marisa N░ 40",
+              "price1": 3155,
+              "price2": 2840,
+              "price3": 2209,
+              "price4": null
+            },
+            {
+              "code": "1145",
+              "description": "JARDINERA N░ 45",
+              "price1": 2785,
+              "price2": 2506,
+              "price3": 1949,
+              "price4": null
+            },
+            {
+              "code": "1155",
+              "description": "JARDINERA N░ 55",
+              "price1": 4637,
+              "price2": 4173,
+              "price3": 3246,
+              "price4": null
+            },
+            {
+              "code": "1165",
+              "description": "JARDINERA N░ 65",
+              "price1": 7846,
+              "price2": 7062,
+              "price3": 5492,
+              "price4": null
+            },
+            {
+              "code": "1170",
+              "description": "JARDINERA OWEN N░ 35",
+              "price1": 1828,
+              "price2": 1645,
+              "price3": 1279,
+              "price4": null
+            },
+            {
+              "code": "1204",
+              "description": "MACETA BERTA N░ 7",
+              "price1": 586,
+              "price2": 528,
+              "price3": 410,
+              "price4": null
+            },
+            {
+              "code": "1205",
+              "description": "MACETA BERTA N░ 9",
+              "price1": 799,
+              "price2": 719,
+              "price3": 559,
+              "price4": null
+            },
+            {
+              "code": "1210",
+              "description": "MACETA CLASICA N░ 10",
+              "price1": 214,
+              "price2": 194,
+              "price3": 149,
+              "price4": null
+            },
+            {
+              "code": "1211",
+              "description": "MACETA CLASICA N░ 11",
+              "price1": 288,
+              "price2": 259,
+              "price3": 201,
+              "price4": null
+            },
+            {
+              "code": "1212",
+              "description": "MACETA CLASICA N░ 12",
+              "price1": 371,
+              "price2": 337,
+              "price3": 259,
+              "price4": null
+            },
+            {
+              "code": "1213",
+              "description": "MACETA CLASICA N░ 13",
+              "price1": 543,
+              "price2": 488,
+              "price3": 380,
+              "price4": null
+            },
+            {
+              "code": "1214",
+              "description": "MACETA CLASICA N░ 14",
+              "price1": 646,
+              "price2": 581,
+              "price3": 452,
+              "price4": null
+            },
+            {
+              "code": "1215",
+              "description": "MACETA CLASICA N░ 15",
+              "price1": 695,
+              "price2": 625,
+              "price3": 486,
+              "price4": null
+            },
+            {
+              "code": "1217",
+              "description": "MACETA CLASICA N░ 17",
+              "price1": 1014,
+              "price2": 913,
+              "price3": 710,
+              "price4": null
+            },
+            {
+              "code": "1219",
+              "description": "MACETA CLASICA N░ 19",
+              "price1": 1263,
+              "price2": 1137,
+              "price3": 884,
+              "price4": null
+            },
+            {
+              "code": "1221",
+              "description": "MACETA CLASICA N░ 21",
+              "price1": 1473,
+              "price2": 1326,
+              "price3": 1031,
+              "price4": null
+            },
+            {
+              "code": "1224",
+              "description": "MACETA CLASICA N░ 24",
+              "price1": 2253,
+              "price2": 2028,
+              "price3": 1577,
+              "price4": null
+            },
+            {
+              "code": "1227",
+              "description": "MACETA CLASICA N░ 27",
+              "price1": 3286,
+              "price2": 2958,
+              "price3": 2300,
+              "price4": null
+            },
+            {
+              "code": "1229",
+              "description": "MACETA CLASICA N░ 29",
+              "price1": 4678,
+              "price2": 4211,
+              "price3": 3275,
+              "price4": null
+            },
+            {
+              "code": "1230",
+              "description": "MACETA CLASICA N░ 30",
+              "price1": 4812,
+              "price2": 4330,
+              "price3": 3368,
+              "price4": null
+            },
+            {
+              "code": "1235",
+              "description": "MACETA CLASICA N░ 35",
+              "price1": 6752,
+              "price2": 6077,
+              "price3": 4727,
+              "price4": null
+            },
+            {
+              "code": "1240",
+              "description": "MACETA CLASICA N░ 40",
+              "price1": 9837,
+              "price2": 8853,
+              "price3": 6886,
+              "price4": null
+            },
+            {
+              "code": "1245",
+              "description": "MACETA CLASICA N░ 45",
+              "price1": 11893,
+              "price2": 10704,
+              "price3": 8326,
+              "price4": null
+            },
+            {
+              "code": "1250",
+              "description": "MACETA CLASICA N░ 50",
+              "price1": 18659,
+              "price2": 16793,
+              "price3": 13061,
+              "price4": null
+            },
+            {
+              "code": "1206",
+              "description": "MACETA CLASICA N░ 6",
+              "price1": 104,
+              "price2": 94,
+              "price3": 73,
+              "price4": null
+            },
+            {
+              "code": "1260",
+              "description": "MACETA CLASICA N░ 60",
+              "price1": 22929,
+              "price2": 20636,
+              "price3": 16050,
+              "price4": null
+            },
+            {
+              "code": "1208",
+              "description": "MACETA CLASICA N░ 8",
+              "price1": 167,
+              "price2": 150,
+              "price3": 117,
+              "price4": null
+            },
+            {
+              "code": "1312",
+              "description": "MACETA CONICA N░ 12",
+              "price1": 920,
+              "price2": 828,
+              "price3": 644,
+              "price4": null
+            },
+            {
+              "code": "1316",
+              "description": "MACETA CONICA N░ 16",
+              "price1": 1759,
+              "price2": 1583,
+              "price3": 1232,
+              "price4": null
+            },
+            {
+              "code": "1320",
+              "description": "MACETA CONICA N░ 20",
+              "price1": 2795,
+              "price2": 2515,
+              "price3": 1956,
+              "price4": null
+            },
+            {
+              "code": "1308",
+              "description": "MACETA CONICA N░ 8",
+              "price1": 497,
+              "price2": 447,
+              "price3": 348,
+              "price4": null
+            },
+            {
+              "code": "1410",
+              "description": "MACETA CUADRADA N░ 10",
+              "price1": 525,
+              "price2": 472,
+              "price3": 367,
+              "price4": null
+            },
+            {
+              "code": "1412",
+              "description": "MACETA CUADRADA N░ 12",
+              "price1": 735,
+              "price2": 662,
+              "price3": 515,
+              "price4": null
+            },
+            {
+              "code": "1414",
+              "description": "MACETA CUADRADA N░ 14",
+              "price1": 1068,
+              "price2": 961,
+              "price3": 748,
+              "price4": null
+            },
+            {
+              "code": "1406",
+              "description": "MACETA CUADRADA N░ 6",
+              "price1": 345,
+              "price2": 311,
+              "price3": 242,
+              "price4": null
+            },
+            {
+              "code": "1408",
+              "description": "MACETA CUADRADA N░ 8",
+              "price1": 441,
+              "price2": 397,
+              "price3": 309,
+              "price4": null
+            },
+            {
+              "code": "1425",
+              "description": "MACETA CUADRADA OWEN N░ 25",
+              "price1": 6263,
+              "price2": 5637,
+              "price3": 4384,
+              "price4": null
+            },
+            {
+              "code": "1512",
+              "description": "MACETA DECORATIVA N░ 12",
+              "price1": 1750,
+              "price2": 1575,
+              "price3": 1225,
+              "price4": null
+            },
+            {
+              "code": "1514",
+              "description": "MACETA DECORATIVA N░ 14",
+              "price1": 1929,
+              "price2": 1736,
+              "price3": 1350,
+              "price4": null
+            },
+            {
+              "code": "1516",
+              "description": "MACETA DECORATIVA N░ 16",
+              "price1": 2805,
+              "price2": 2525,
+              "price3": 1964,
+              "price4": null
+            },
+            {
+              "code": "1506",
+              "description": "MACETA DECORATIVA N░ 6",
+              "price1": 823,
+              "price2": 740,
+              "price3": 576,
+              "price4": null
+            },
+            {
+              "code": "1508",
+              "description": "MACETA DECORATIVA N░ 8",
+              "price1": 1046,
+              "price2": 942,
+              "price3": 732,
+              "price4": null
+            },
+            {
+              "code": "1615",
+              "description": "MACETA IBIZA N░ 15",
+              "price1": 1857,
+              "price2": 1671,
+              "price3": 1300,
+              "price4": null
+            },
+            {
+              "code": "1620",
+              "description": "MACETA IBIZA N░ 20",
+              "price1": 3356,
+              "price2": 3020,
+              "price3": 2349,
+              "price4": null
+            },
+            {
+              "code": "1625",
+              "description": "MACETA IBIZA N░ 25",
+              "price1": 3910,
+              "price2": 3519,
+              "price3": 2737,
+              "price4": null
+            },
+            {
+              "code": "1630",
+              "description": "MACETA IBIZA N░ 30",
+              "price1": 7076,
+              "price2": 6369,
+              "price3": 4953,
+              "price4": null
+            },
+            {
+              "code": "1635",
+              "description": "MACETA IBIZA N░ 35",
+              "price1": 10708,
+              "price2": 9637,
+              "price3": 7496,
+              "price4": null
+            },
+            {
+              "code": "1640",
+              "description": "MACETA IBIZA N░ 40",
+              "price1": 13543,
+              "price2": 12189,
+              "price3": 9480,
+              "price4": null
+            },
+            {
+              "code": "1220",
+              "description": "MACETA LIVIANA N° 14",
+              "price1": 202,
+              "price2": 182,
+              "price3": 141,
+              "price4": null
+            },
+            {
+              "code": "1202",
+              "description": "MACETA LIVIANA N║ 10",
+              "price1": 163,
+              "price2": 147,
+              "price3": 114,
+              "price4": null
+            },
+            {
+              "code": "1203",
+              "description": "MACETA LIVIANA N║ 12",
+              "price1": 177,
+              "price2": 159,
+              "price3": 124,
+              "price4": null
+            },
+            {
+              "code": "1201",
+              "description": "MACETA LIVIANA N║ 9",
+              "price1": 85,
+              "price2": 77,
+              "price3": 60,
+              "price4": null
+            },
+            {
+              "code": "1730",
+              "description": "MACETA PIRAMIDAL N░ 30",
+              "price1": 7276,
+              "price2": 6548,
+              "price3": 5093,
+              "price4": null
+            },
+            {
+              "code": "1740",
+              "description": "MACETA PIRAMIDAL N░ 40",
+              "price1": 12233,
+              "price2": 11010,
+              "price3": 8563,
+              "price4": null
+            },
+            {
+              "code": "1752",
+              "description": "MACETA PIRAMIDAL N░ 52",
+              "price1": 20012,
+              "price2": 18011,
+              "price3": 14009,
+              "price4": null
+            },
+            {
+              "code": "1712",
+              "description": "MACETA PREMIUM CUADRADA N░ 12",
+              "price1": 1344,
+              "price2": 1209,
+              "price3": 941,
+              "price4": null
+            },
+            {
+              "code": "1716",
+              "description": "MACETA PREMIUM CUADRADA N░ 16",
+              "price1": 2273,
+              "price2": 2046,
+              "price3": 1591,
+              "price4": null
+            },
+            {
+              "code": "1720",
+              "description": "MACETA PREMIUM CUADRADA N░ 20",
+              "price1": 4253,
+              "price2": 3828,
+              "price3": 2977,
+              "price4": null
+            },
+            {
+              "code": "1708",
+              "description": "MACETA PREMIUM CUADRADA N░ 8",
+              "price1": 683,
+              "price2": 615,
+              "price3": 478,
+              "price4": null
+            },
+            {
+              "code": "1812",
+              "description": "MACETA PREMIUM REDONDA N░ 12",
+              "price1": 1166,
+              "price2": 1049,
+              "price3": 816,
+              "price4": null
+            },
+            {
+              "code": "1816",
+              "description": "MACETA PREMIUM REDONDA N░ 16",
+              "price1": 2127,
+              "price2": 1915,
+              "price3": 1489,
+              "price4": null
+            },
+            {
+              "code": "1818",
+              "description": "MACETA PREMIUM REDONDA N░ 18",
+              "price1": 2419,
+              "price2": 2177,
+              "price3": 1693,
+              "price4": null
+            },
+            {
+              "code": "1822",
+              "description": "MACETA PREMIUM REDONDA N░ 22",
+              "price1": 4368,
+              "price2": 3931,
+              "price3": 3057,
+              "price4": null
+            },
+            {
+              "code": "1827",
+              "description": "MACETA PREMIUM REDONDA N░ 27",
+              "price1": 8268,
+              "price2": 7441,
+              "price3": 5788,
+              "price4": null
+            },
+            {
+              "code": "1808",
+              "description": "MACETA PREMIUM REDONDA N░ 8",
+              "price1": 614,
+              "price2": 552,
+              "price3": 429,
+              "price4": null
+            },
+            {
+              "code": "1830",
+              "description": "Maceta Terrina n║12",
+              "price1": 905,
+              "price2": 815,
+              "price3": 634,
+              "price4": null
+            },
+            {
+              "code": "1897",
+              "description": "MANGUERA TRENZADA FLUOR",
+              "price1": 41027,
+              "price2": 36924,
+              "price3": 28719,
+              "price4": null
+            },
+            {
+              "code": "1914",
+              "description": "MENSULAS PLASTICAS Nº 3",
+              "price1": 1944,
+              "price2": 1749,
+              "price3": 1360,
+              "price4": null
+            },
+            {
+              "code": "1898",
+              "description": "PALITA PLASTICA ANCHA",
+              "price1": 1839,
+              "price2": 1655,
+              "price3": 1287,
+              "price4": null
+            },
+            {
+              "code": "1899",
+              "description": "PALITA PLASTICA FINA",
+              "price1": 1839,
+              "price2": 1655,
+              "price3": 1287,
+              "price4": null
+            },
+            {
+              "code": "1915",
+              "description": "SEMILLA CESPED 9 VARIEDADES X 500 GR",
+              "price1": 7529,
+              "price2": 6776,
+              "price3": 5271,
+              "price4": null
+            },
+            {
+              "code": "1916",
+              "description": "SEMILLAS AROMATICAS",
+              "price1": 1452,
+              "price2": 1307,
+              "price3": 1016,
+              "price4": null
+            },
+            {
+              "code": "1917",
+              "description": "SEMILLAS FLORES",
+              "price1": 1452,
+              "price2": 1307,
+              "price3": 1016,
+              "price4": null
+            },
+            {
+              "code": "1918",
+              "description": "SEMILLAS HORTALIZAS",
+              "price1": 1452,
+              "price2": 1307,
+              "price3": 1016,
+              "price4": null
+            },
+            {
+              "code": "1920",
+              "description": "TIERRA",
+              "price1": 800,
+              "price2": 720,
+              "price3": null,
+              "price4": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
