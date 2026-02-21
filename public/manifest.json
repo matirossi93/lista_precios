@@ -1,0 +1,27 @@
+{
+    "name": "Semillero El Manantial",
+    "short_name": "El Manantial",
+    "description": "Lista de precios oficial de Forrajería y Alimentos Semillero El Manantial",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#fcfdf8",
+    "theme_color": "#5c973a",
+    "icons": [
+        {
+            "src": "/logo.svg",
+            "sizes": "any",
+            "type": "image/svg+xml"
+        },
+        {
+            "src": "/logo.svg",
+            "sizes": "192x192",
+            "type": "image/svg+xml",
+            "purpose": "maskable"
+        },
+        {
+            "src": "/logo.svg",
+            "sizes": "512x512",
+            "type": "image/svg+xml"
+        }
+    ]
+}
