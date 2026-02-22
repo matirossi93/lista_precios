@@ -123,6 +123,56 @@
   <!-- Notification Toast -->
   <div id="toast" class="toast hidden">Producto agregado</div>
 
+  <!-- Mobile Bottom Navigation -->
+  <nav class="mobile-bottom-nav">
+    <button id="mobileBranchBtn" class="mobile-nav-item">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+        <circle cx="12" cy="10" r="3"></circle>
+      </svg>
+      <span>Sucursales</span>
+    </button>
+    <button id="mobileCategoryBtn" class="mobile-nav-item">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="8" y1="6" x2="21" y2="6"></line>
+        <line x1="8" y1="12" x2="21" y2="12"></line>
+        <line x1="8" y1="18" x2="21" y2="18"></line>
+        <line x1="3" y1="6" x2="3.01" y2="6"></line>
+        <line x1="3" y1="12" x2="3.01" y2="12"></line>
+        <line x1="3" y1="18" x2="3.01" y2="18"></line>
+      </svg>
+      <span>Rubros</span>
+    </button>
+  </nav>
+
+  <!-- Mobile Modals -->
+  <div id="mobileModalOverlay" class="mobile-modal-overlay hidden">
+    <!-- Branch Picker Modal -->
+    <div id="branchModal" class="mobile-modal hidden">
+      <div class="modal-header">
+        <h3>Seleccionar Sucursal</h3>
+        <button class="close-modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <button class="modal-opt" data-branch="sm">📍 Av. San Martín 105</button>
+        <button class="modal-opt" data-branch="sc">📍 Santo Cristo 85</button>
+      </div>
+    </div>
+
+    <!-- Category Picker Modal -->
+    <div id="categoryModal" class="mobile-modal hidden">
+      <div class="modal-header">
+        <h3>Seleccionar Rubro</h3>
+        <button class="close-modal">&times;</button>
+      </div>
+      <div id="mobileCategoryList" class="modal-body scrollable">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </div>
+
   <script type="module" src="/main.js"></script>
 </body>
 

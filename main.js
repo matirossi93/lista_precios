@@ -381,6 +381,33 @@ const renderIndex = (categories) => {
 
   indexHtml += `</div>`;
   navContainer.innerHTML = indexHtml;
+
+  // NEW: Populate mobile category list
+  const mobileCatList = document.getElementById('mobileCategoryList');
+  if (mobileCatList) {
+    mobileCatList.innerHTML = '';
+    activeCategories.forEach(cat => {
+      const catId = 'cat-' + cat.name.replace(/[^a-zA-Z0-9]/g, '-').toLowerCase();
+      const btn = document.createElement('button');
+      btn.className = 'modal-opt';
+      btn.style.display = 'flex';
+      btn.style.alignItems = 'center';
+      btn.style.gap = '10px';
+      btn.innerHTML = `${getCategoryIcon(cat.name)} <span>${cat.name}</span>`;
+      btn.onclick = () => {
+        const el = document.getElementById(catId);
+        if (el) {
+          const yOffset = -70; // Header offset
+          const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+          window.scrollTo({ top: y, behavior: 'smooth' });
+        }
+        // Close modal
+        const overlay = document.getElementById('mobileModalOverlay');
+        if (overlay) overlay.click();
+      };
+      mobileCatList.appendChild(btn);
+    });
+  }
 };
 
 // Render function
@@ -967,7 +994,51 @@ const initCartUI = () => {
   });
 };
 
+// Mobile UI Logic
+const initMobileUI = () => {
+  const overlay = document.getElementById('mobileModalOverlay');
+  const branchModal = document.getElementById('branchModal');
+  const catModal = document.getElementById('categoryModal');
+  const branchBtn = document.getElementById('mobileBranchBtn');
+  const catBtn = document.getElementById('mobileCategoryBtn');
+  const closeBtns = document.querySelectorAll('.close-modal');
+
+  if (!overlay || !branchModal || !catModal || !branchBtn || !catBtn) return;
+
+  const openModal = (modal) => {
+    overlay.classList.remove('hidden');
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeModal = () => {
+    overlay.classList.add('hidden');
+    branchModal.classList.add('hidden');
+    catModal.classList.add('hidden');
+    document.body.style.overflow = '';
+  };
+
+  branchBtn.addEventListener('click', () => openModal(branchModal));
+  catBtn.addEventListener('click', () => openModal(catModal));
+
+  closeBtns.forEach(btn => btn.addEventListener('click', closeModal));
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) closeModal();
+  });
+
+  // Handle branch selection in modal
+  branchModal.querySelectorAll('.modal-opt').forEach(opt => {
+    opt.addEventListener('click', () => {
+      const branchIdx = opt.dataset.branch;
+      const url = new URL(window.location.href);
+      url.searchParams.set('sucursal', branchIdx);
+      window.location.href = url.toString();
+    });
+  });
+};
+
 initCartUI();
+initMobileUI();
 
 // Toast Helper
 const showToast = (msg) => {
