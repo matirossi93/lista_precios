@@ -199,16 +199,17 @@ body {
 
 /* Category Header */
 .category-header {
-  padding: 0.5rem 1rem;
+  padding: 0.8rem 1.2rem;
   font-size: 1.1rem;
   font-weight: 700;
   text-transform: uppercase;
-  text-align: center;
-  background-color: var(--cat-color, var(--primary));
-  border-bottom: 1px solid var(--cat-color, var(--primary));
-  color: var(--text-color, white);
+  text-align: left;
+  display: flex;
+  align-items: center;
+  background-color: color-mix(in srgb, var(--cat-color) 12%, white);
+  border-bottom: 1px solid color-mix(in srgb, var(--cat-color) 25%, white);
+  color: var(--cat-color);
   text-shadow: none;
-  /* Removed text shadow for cleaner look */
 }
 
 /* Table Styles */
@@ -238,13 +239,16 @@ body {
 }
 
 .pricing-table thead th.th-main {
-  background-color: var(--cat-color, var(--primary));
-  border-color: var(--cat-color, var(--primary));
-  color: var(--text-color, white);
+  background-color: #f5f7fa;
+  border-color: var(--border-color);
+  color: var(--text-muted);
+  font-weight: 600;
+  font-size: 0.75rem;
+  padding: 6px;
 }
 
 .pricing-table thead tr:first-child th:first-child {
-  border-color: var(--cat-color, var(--border-color));
+  border-color: var(--border-color);
 }
 
 /* Column Widths */
@@ -269,13 +273,12 @@ body {
 .brand-row td {
   font-weight: 700;
   text-transform: uppercase;
-  padding: 6px 10px;
+  padding: 8px 12px;
   text-align: left;
   font-size: 0.95rem;
-  background-color: var(--cat-color, var(--primary));
-  opacity: 0.9;
-  color: var(--text-color, white);
-  text-shadow: none;
+  background-color: #fcfcfc;
+  color: #333;
+  border-bottom: 2px solid color-mix(in srgb, var(--cat-color) 20%, transparent);
 }
 
 /* Product Rows */
@@ -881,6 +884,22 @@ footer {
 [data-theme="dark"] .category-section {
   background-color: var(--card-bg);
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="dark"] .category-header {
+  background-color: color-mix(in srgb, var(--cat-color) 15%, var(--card-bg));
+  border-bottom: 1px solid color-mix(in srgb, var(--cat-color) 25%, var(--border-color));
+}
+
+[data-theme="dark"] .pricing-table thead th.th-main {
+  background-color: #252525;
+  color: #a0a0a0;
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] .brand-row td {
+  background-color: #202020;
+  color: #e0e0e0;
 }
 
 [data-theme="dark"] .price-cell,
