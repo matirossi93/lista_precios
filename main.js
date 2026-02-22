@@ -397,10 +397,13 @@ const renderBatch = () => {
   for (let i = currentRenderIndex; i < end; i++) {
     const { brand, category, headers, color, headerTextColor, colSpan, isNewCategory } = currentRenderItems[i];
 
-    // Start Category Section if it's the first brand of that category
-    if (isNewCategory) {
-      if (i > 0) {
-        // Close previous category table and section if not first element overall
+    // True if this is the first item IN THIS BATCH, but NOT a new category (meaning it continues from previous batch)
+    const isContinuingCategory = (i === currentRenderIndex) && !isNewCategory;
+
+    // Start Category Section if it's the first brand of that category OR continuing from last batch
+    if (isNewCategory || isContinuingCategory) {
+      if (i > currentRenderIndex) {
+        // Close previous category table and section within this batch
         html += `
               </tbody>
             </table>
@@ -411,16 +414,16 @@ const renderBatch = () => {
 
       html += `
         <section id="cat-${category.name.replace(/[^a-zA-Z0-9]/g, '-').toLowerCase()}" class="category-section" style="--cat-color: ${color}; --text-color: ${headerTextColor};">
-          <div class="category-header">
+          ${isNewCategory ? `<div class="category-header">
             ${getCategoryIcon(category.name)} ${category.name}
-          </div>
+          </div>` : ''}
           <div class="table-responsive">
             <table class="pricing-table">
               <thead>
-                <tr>
+                ${isNewCategory ? `<tr>
                   <th colspan="2" class="th-main" style="border-right: none;"></th>
                   <th colspan="${colSpan}" class="th-main" style="border-left: none;">PRECIO</th>
-                </tr>
+                </tr>` : ''}
                 <tr>
                   <th class="col-code">COD</th>
                   <th class="col-desc">DESCRIPCION</th>
@@ -432,7 +435,7 @@ const renderBatch = () => {
     }
 
     // Brand Header
-    if (brand.name !== category.name && brand.name !== 'General') {
+    if (brand.name !== category.name && brand.name !== 'General' && brand.name !== 'PERRO:' && brand.name !== 'GATO:') {
       html += `
           <tr class="brand-row">
             <td colspan="${colSpan + 2}">${brand.name}</td>
@@ -462,8 +465,8 @@ const renderBatch = () => {
     });
   }
 
-  // If this batch reaches the end, close the last table/section
-  if (end === currentRenderItems.length && currentRenderItems.length > 0) {
+  // Close the last table/section inside this batch
+  if (currentRenderItems.length > 0 && end > currentRenderIndex) {
     html += `
             </tbody>
           </table>
