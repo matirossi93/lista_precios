@@ -211,7 +211,7 @@ const parseCSV = (csvText) => {
 
         // 1. Header Row Detection (Retail has headers UNDER category)
         // Look for 'COD' in col0. If found, capture columns 3,4,5,6,7 as headers
-        if (col0 && (col0 === 'COD' || col0 === 'CODIGO' || col0 === 'ARTICULO')) {
+        if (col0 && /^\d*COD(IGO|S)?$/i.test(col0.trim())) {
           // Retail CSV: 0=COD, 1=DESCRIPCION, 2=Pres?, 3=Header1, 4=Header2, 5=Header3, 6=Header4, 7=Header5
           if (columns[3]) currentRetailLabel1 = columns[3];
           if (columns[4]) currentRetailLabel2 = columns[4];
@@ -243,24 +243,26 @@ const parseCSV = (csvText) => {
         // Category?
         if (col0 && KNOWN_CATEGORIES.includes(col0)) {
           // Found a new Category
-          currentRetailLabel1 = '';
-          currentRetailLabel2 = '';
-          currentRetailLabel3 = '';
-          currentRetailLabel4 = '';
-          currentRetailLabel5 = '';
-
           isCurrentlySplitting = false;
+
+          const activeCols = [
+            currentRetailLabel1,
+            currentRetailLabel2,
+            currentRetailLabel3,
+            currentRetailLabel4,
+            currentRetailLabel5
+          ].filter(c => c && c.trim() !== '');
 
           // Special logic for ALIMENTO PERRO Y GATO
           if (col0 === 'ALIMENTO PERRO Y GATO') {
             isCurrentlySplitting = true;
 
             // Create Dog Category
-            proxyCatDog = { name: 'ALIMENTO PARA PERROS', brands: [], columns: [] };
+            proxyCatDog = { name: 'ALIMENTO PARA PERROS', brands: [], columns: activeCols };
             result.categories.push(proxyCatDog);
 
             // Create Cat Category
-            proxyCatCat = { name: 'ALIMENTO PARA GATOS', brands: [], columns: [] };
+            proxyCatCat = { name: 'ALIMENTO PARA GATOS', brands: [], columns: activeCols };
             result.categories.push(proxyCatCat);
 
             currentCategory = proxyCatDog; // Set a default context
@@ -268,7 +270,7 @@ const parseCSV = (csvText) => {
             continue;
           }
 
-          currentCategory = { name: col0, brands: [], columns: [] };
+          currentCategory = { name: col0, brands: [], columns: activeCols };
           result.categories.push(currentCategory);
           currentBrand = { name: col0, items: [] };
           currentCategory.brands.push(currentBrand);
@@ -556,7 +558,7 @@ const renderList = (data, filterText = '') => {
 
       let headers = category.columns && category.columns.length > 0
         ? category.columns
-        : (isWholesale ? ['LISTA 1', 'LISTA 2', 'LISTA 3', 'LISTA 4'] : ['']).filter(Boolean);
+        : (isWholesale ? ['LISTA 1', 'LISTA 2', 'LISTA 3', 'LISTA 4'] : ['PRECIO']).filter(Boolean);
 
       const colSpan = Math.max(1, headers.length);
 
