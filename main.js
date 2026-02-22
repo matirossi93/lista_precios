@@ -47,7 +47,7 @@ const CATEGORY_COLORS = {
   'ACCESORIOS': '#7b1fa2',  // Deep Purple
   // Retail Colors
   'BALANCEADOS': '#d32f2f',
-  'ALIMENTO PERRO Y GATO': '#f57c00',
+  'ALIMENTO PERRO Y GATO': '#f57c00', // Keep for matching, but will be replaced structurally
   'CEREALES Y MEZCLAS': '#4caf50',
   'COMESTIBLES': '#ff9800',
   'ACCESORIOS Y VENENOS': '#7b1fa2',
@@ -136,6 +136,11 @@ const parseCSV = (csvText) => {
     const num = parseFloat(clean);
     return isNaN(num) ? null : num;
   };
+
+  // Helper arrays for split logic
+  let proxyCatDog = null;
+  let proxyCatCat = null;
+  let isCurrentlySplitting = false;
 
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
@@ -239,6 +244,26 @@ const parseCSV = (csvText) => {
           currentRetailLabel4 = '';
           currentRetailLabel5 = '';
 
+          isCurrentlySplitting = false;
+
+          // Special logic for ALIMENTO PERRO Y GATO
+          if (col0 === 'ALIMENTO PERRO Y GATO') {
+            isCurrentlySplitting = true;
+
+            // Create Dog Category
+            proxyCatDog = { name: 'ALIMENTO PARA PERROS', brands: [], columns: [] };
+            result.categories.push(proxyCatDog);
+            currentBrand = { name: 'ALIMENTO PARA PERROS', items: [] };
+            proxyCatDog.brands.push(currentBrand);
+
+            // Create Cat Category
+            proxyCatCat = { name: 'ALIMENTO PARA GATOS', brands: [], columns: [] };
+            result.categories.push(proxyCatCat);
+
+            currentCategory = proxyCatDog; // Set a default context for generic rows
+            continue;
+          }
+
           currentCategory = { name: col0, brands: [], columns: [] };
           result.categories.push(currentCategory);
           currentBrand = { name: col0, items: [] };
@@ -263,7 +288,21 @@ const parseCSV = (csvText) => {
           // If it's not a price row (no $) and looks like a brand
           // Make sure we are inside a category
           if (brandName && columns[3] && !columns[3].includes('$')) {
-            if (currentCategory) {
+            if (isCurrentlySplitting) {
+              // Push the new brand to BOTH dog and cat categories, 
+              // we will filter out empty brands later
+              let dogBrand = { name: brandName, items: [] };
+              proxyCatDog.brands.push(dogBrand);
+
+              let catBrand = { name: brandName, items: [] };
+              proxyCatCat.brands.push(catBrand);
+
+              // When splitting, currentBrand is ambiguous until an item arrives,
+              // but we can set it to the dog one temporarily. The item placement logic
+              // needs to find the latest brand in the respective category.
+              currentBrand = dogBrand;
+              continue;
+            } else if (currentCategory) {
               currentBrand = { name: brandName, items: [] };
               currentCategory.brands.push(currentBrand);
             }
@@ -273,14 +312,29 @@ const parseCSV = (csvText) => {
       }
 
       // Add Item if found
-      if (code && desc && currentCategory) {
+      if (code && desc && (currentCategory || isCurrentlySplitting)) {
         const item = { code, description: desc, price1, price2, price3, price4, price5 };
 
-        if (!currentBrand) {
-          currentBrand = { name: currentCategory.name, items: [] };
-          currentCategory.brands.push(currentBrand);
+        if (isCurrentlySplitting) {
+          const lowerDesc = desc.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+          const isCat = lowerDesc.includes('gato') || lowerDesc.includes('felino') || lowerDesc.includes('piedra') || lowerDesc.includes('sanitaria') || lowerDesc.includes('cat');
+
+          if (isCat) {
+            const brandToPush = proxyCatCat.brands[proxyCatCat.brands.length - 1];
+            if (brandToPush) brandToPush.items.push(item);
+            else proxyCatCat.brands.push({ name: 'ALIMENTO PARA GATOS', items: [item] });
+          } else {
+            const brandToPush = proxyCatDog.brands[proxyCatDog.brands.length - 1];
+            if (brandToPush) brandToPush.items.push(item);
+            else proxyCatDog.brands.push({ name: 'ALIMENTO PARA PERROS', items: [item] });
+          }
+        } else {
+          if (!currentBrand) {
+            currentBrand = { name: currentCategory.name, items: [] };
+            currentCategory.brands.push(currentBrand);
+          }
+          currentBrand.items.push(item);
         }
-        currentBrand.items.push(item);
       }
     } catch (err) {
       console.warn(`Error procesando fila ${i + 1}: ${line}`, err);
