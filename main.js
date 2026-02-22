@@ -600,7 +600,7 @@ const renderList = (data, filterText = '') => {
             <a href="https://wa.me/5493813315389?text=Hola,%20quisiera%20consultar%20por%20la%20lista%20de%20precios%20mayorista." 
                target="_blank" 
                class="btn-wholesale">
-               🏢 ¿Sos Mayorista? Consultar Aquí
+               ¿Sos Mayorista? Consultar Aquí
             </a>
         `;
       if (promoContainer) promoContainer.appendChild(wholesaleBtn);
