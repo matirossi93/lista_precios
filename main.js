@@ -220,14 +220,19 @@ const parseCSV = (csvText) => {
           if (columns[7]) currentRetailLabel5 = columns[7]; else currentRetailLabel5 = '';
 
           // Update the current category's columns if we have one
+          const newCols = [
+            currentRetailLabel1,
+            currentRetailLabel2,
+            currentRetailLabel3,
+            currentRetailLabel4,
+            currentRetailLabel5
+          ].filter(c => c && c.trim() !== '');
+
           if (currentCategory) {
-            currentCategory.columns = [
-              currentRetailLabel1,
-              currentRetailLabel2,
-              currentRetailLabel3,
-              currentRetailLabel4,
-              currentRetailLabel5
-            ].filter(c => c && c.trim() !== '');
+            currentCategory.columns = newCols;
+          }
+          if (isCurrentlySplitting && proxyCatCat) {
+            proxyCatCat.columns = newCols;
           }
           continue;
         }
@@ -253,14 +258,13 @@ const parseCSV = (csvText) => {
             // Create Dog Category
             proxyCatDog = { name: 'ALIMENTO PARA PERROS', brands: [], columns: [] };
             result.categories.push(proxyCatDog);
-            currentBrand = { name: 'ALIMENTO PARA PERROS', items: [] };
-            proxyCatDog.brands.push(currentBrand);
 
             // Create Cat Category
             proxyCatCat = { name: 'ALIMENTO PARA GATOS', brands: [], columns: [] };
             result.categories.push(proxyCatCat);
 
-            currentCategory = proxyCatDog; // Set a default context for generic rows
+            currentCategory = proxyCatDog; // Set a default context
+            currentBrand = null;
             continue;
           }
 
@@ -285,22 +289,26 @@ const parseCSV = (csvText) => {
         else if (!col0 && col1 && !col1.startsWith('tel')) {
           // Potential sub-header or brand like "MEZCLAS"
           let brandName = col1;
-          // If it's not a price row (no $) and looks like a brand
-          // Make sure we are inside a category
-          if (brandName && columns[3] && !columns[3].includes('$')) {
+          // In retail, a row with empty col0 and a col1 description is a brand/sub-category. 
+          // We must ensure it's not a pricing row by checking it doesn't have a '$' symbol in its prices
+          const hasPriceSymbol = Object.values(columns).some(c => typeof c === 'string' && c.includes('$'));
+
+          if (brandName && !hasPriceSymbol) {
             if (isCurrentlySplitting) {
-              // Push the new brand to BOTH dog and cat categories, 
-              // we will filter out empty brands later
-              let dogBrand = { name: brandName, items: [] };
-              proxyCatDog.brands.push(dogBrand);
-
-              let catBrand = { name: brandName, items: [] };
-              proxyCatCat.brands.push(catBrand);
-
-              // When splitting, currentBrand is ambiguous until an item arrives,
-              // but we can set it to the dog one temporarily. The item placement logic
-              // needs to find the latest brand in the respective category.
-              currentBrand = dogBrand;
+              const upperBrand = brandName.toUpperCase().trim();
+              if (upperBrand === 'PERRO:') {
+                currentCategory = proxyCatDog;
+                currentBrand = { name: 'ALIMENTO PARA PERROS', items: [] };
+                proxyCatDog.brands.push(currentBrand);
+              } else if (upperBrand === 'GATO:') {
+                currentCategory = proxyCatCat;
+                currentBrand = { name: 'ALIMENTO PARA GATOS', items: [] };
+                proxyCatCat.brands.push(currentBrand);
+              } else {
+                // In case there are other sub-brands inside the split category, add to the active one
+                currentBrand = { name: brandName, items: [] };
+                currentCategory.brands.push(currentBrand);
+              }
               continue;
             } else if (currentCategory) {
               currentBrand = { name: brandName, items: [] };
@@ -312,29 +320,14 @@ const parseCSV = (csvText) => {
       }
 
       // Add Item if found
-      if (code && desc && (currentCategory || isCurrentlySplitting)) {
+      if (code && desc && currentCategory) {
         const item = { code, description: desc, price1, price2, price3, price4, price5 };
 
-        if (isCurrentlySplitting) {
-          const lowerDesc = desc.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-          const isCat = lowerDesc.includes('gato') || lowerDesc.includes('felino') || lowerDesc.includes('piedra') || lowerDesc.includes('sanitaria') || lowerDesc.includes('cat');
-
-          if (isCat) {
-            const brandToPush = proxyCatCat.brands[proxyCatCat.brands.length - 1];
-            if (brandToPush) brandToPush.items.push(item);
-            else proxyCatCat.brands.push({ name: 'ALIMENTO PARA GATOS', items: [item] });
-          } else {
-            const brandToPush = proxyCatDog.brands[proxyCatDog.brands.length - 1];
-            if (brandToPush) brandToPush.items.push(item);
-            else proxyCatDog.brands.push({ name: 'ALIMENTO PARA PERROS', items: [item] });
-          }
-        } else {
-          if (!currentBrand) {
-            currentBrand = { name: currentCategory.name, items: [] };
-            currentCategory.brands.push(currentBrand);
-          }
-          currentBrand.items.push(item);
+        if (!currentBrand) {
+          currentBrand = { name: currentCategory.name, items: [] };
+          currentCategory.brands.push(currentBrand);
         }
+        currentBrand.items.push(item);
       }
     } catch (err) {
       console.warn(`Error procesando fila ${i + 1}: ${line}`, err);
