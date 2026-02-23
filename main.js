@@ -14,6 +14,9 @@ const SHEET_URL_RETAIL_SM = 'https://docs.google.com/spreadsheets/d/1zQiK3ETwjhF
 // Retail (Minorista) - Santo Cristo 85
 const SHEET_URL_RETAIL_SC = 'https://docs.google.com/spreadsheets/d/18VI6WJ3Q-howf2IPxGYt7I70BnRM-_msNoQpCiheZik/export?format=csv&gid=4376430';
 
+// Retail (Minorista) - Av. Jujuy 1672
+const SHEET_URL_RETAIL_JUJUY = 'https://docs.google.com/spreadsheets/d/1NTApxbnNgv7ok9Z0upRhvD7u18WYKXfQLel29dVXqZ4/export?format=csv&gid=1147265019';
+
 // Determine which list to load based on URL params
 const urlParams = new URLSearchParams(window.location.search);
 const isWholesale = urlParams.get('lista') === 'mayorista';
@@ -21,12 +24,15 @@ const isWholesale = urlParams.get('lista') === 'mayorista';
 // Determine retail branch
 const branchParam = urlParams.get('sucursal') || 'sm';
 const isSantoCristo = branchParam === 'sc' || branchParam === 'santo-cristo';
+const isJujuy = branchParam === 'jujuy' || branchParam === 'ju';
 
 let SHEET_URL;
 if (isWholesale) {
   SHEET_URL = SHEET_URL_WHOLESALE;
 } else if (isSantoCristo) {
   SHEET_URL = SHEET_URL_RETAIL_SC;
+} else if (isJujuy) {
+  SHEET_URL = SHEET_URL_RETAIL_JUJUY;
 } else {
   SHEET_URL = SHEET_URL_RETAIL_SM;
 }
@@ -701,8 +707,11 @@ const init = async () => {
 
       const btnSM = document.getElementById('btnBranchSM');
       const btnSC = document.getElementById('btnBranchSC');
+      const btnJujuy = document.getElementById('btnBranchJU');
 
-      if (isSantoCristo) {
+      if (isJujuy) {
+        btnJujuy.classList.add('active');
+      } else if (isSantoCristo) {
         btnSC.classList.add('active');
       } else {
         btnSM.classList.add('active');
@@ -713,6 +722,9 @@ const init = async () => {
       });
       btnSC.addEventListener('click', () => {
         if (!btnSC.classList.contains('active')) window.location.search = '?sucursal=sc';
+      });
+      btnJujuy.addEventListener('click', () => {
+        if (!btnJujuy.classList.contains('active')) window.location.search = '?sucursal=jujuy';
       });
     }
   }
