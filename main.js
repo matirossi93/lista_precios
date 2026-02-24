@@ -487,16 +487,13 @@ const renderBatch = () => {
             <table class="pricing-table">
               <thead>
                 ${isNewCategory ? `<tr>
-                  <th class="col-code th-main" style="border-right: none; border-bottom: none;"></th>
-                  <th class="col-desc th-main" style="border-left: none; border-bottom: none;"></th>
-                  <th colspan="${headers.length}" class="th-main" style="border-left: none; text-align: center;">PRECIO</th>
-                  ${!isWholesale ? '<th class="col-cart th-main" style="border-left: none; border-bottom: none;"></th>' : ''}
+                  <th colspan="2" class="th-main" style="border-right: none;"></th>
+                  <th colspan="${colSpan}" class="th-main" style="border-left: none;">PRECIO</th>
                 </tr>` : ''}
                 <tr>
                   <th class="col-code">COD</th>
                   <th class="col-desc">DESCRIPCION</th>
                   ${headers.map(h => `<th class="col-price">${h}</th>`).join('')}
-                  ${!isWholesale ? '<th class="col-cart"></th>' : ''}
                 </tr>
               </thead>
               <tbody>
@@ -507,7 +504,7 @@ const renderBatch = () => {
     if (brand.name !== category.name && brand.name !== 'General' && brand.name !== 'PERRO:' && brand.name !== 'GATO:') {
       html += `
           <tr class="brand-row">
-            <td colspan="${colSpan + (!isWholesale ? 3 : 2)}">${brand.name}</td>
+            <td colspan="${colSpan + 2}">${brand.name}</td>
           </tr>
         `;
     }

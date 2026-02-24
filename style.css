@@ -1260,19 +1260,10 @@ footer {
   }
 
   /* Squeeze columns gracefully */
-  .col-code {
-    width: 35px;
-    font-size: 0.75rem;
-  }
-
   .col-desc {
-    min-width: 100px;
+    min-width: 120px;
     white-space: normal;
     line-height: 1.15;
-  }
-
-  .col-cart {
-    width: 35px;
   }
 
   .price-cell {
