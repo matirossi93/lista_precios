@@ -315,10 +315,24 @@ body {
 }
 
 /* Header Rows */
-.pricing-table thead th {
+.pricing-table thead {
   position: sticky;
   top: 104px;
   /* Default sticky offset for Desktop header height */
+  z-index: 10;
+}
+
+@media (max-width: 767px) {
+  .pricing-table thead {
+    top: 60px;
+    /* Offset for Mobile header height */
+  }
+}
+
+.pricing-table thead th {
+  position: sticky;
+  top: 104px;
+  /* Duplicate top for TH to fix row collapse in some browsers */
   z-index: 10;
   font-weight: 700;
   text-transform: uppercase;
@@ -333,7 +347,6 @@ body {
 @media (max-width: 767px) {
   .pricing-table thead th {
     top: 60px;
-    /* Offset for Mobile header height */
   }
 }
 
@@ -344,6 +357,15 @@ body {
   font-weight: 600;
   font-size: 0.75rem;
   padding: 6px;
+  top: 132px;
+  /* Offset for secondary header row (104px top + 28px height) */
+}
+
+@media (max-width: 767px) {
+  .pricing-table thead th.th-main {
+    top: 83px;
+    /* Offset (60px top + 23px height) */
+  }
 }
 
 /* Ensure secondary rows in thead don't overlap headers, handled by sticky thead */
@@ -423,8 +445,6 @@ footer {
 /* Responsive Table Wrapper */
 .table-responsive {
   width: 100%;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
 }
 
 @media (max-width: 640px) {
@@ -523,6 +543,8 @@ footer {
   align-items: center;
   gap: 0.25rem;
   width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .wholesale-alert-title {
@@ -1261,11 +1283,6 @@ footer {
   }
 
   /* Squeeze columns gracefully */
-  /* Hide product code on mobile to save space */
-  .col-code {
-    display: none;
-  }
-
   .col-desc {
     min-width: 120px;
     white-space: normal;
@@ -1468,5 +1485,11 @@ footer {
   .header-filters #branchSelector,
   .category-nav {
     display: none !important;
+  }
+
+  /* Ensure wholesale banner isn't hidden by mobile nav overrides */
+  .promo-container {
+    width: 100%;
+    margin-top: 10px;
   }
 }
