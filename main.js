@@ -659,20 +659,24 @@ const renderList = (data, filterText = '') => {
     if (!isWholesale) {
       const wholesaleBtn = document.createElement('div');
       wholesaleBtn.className = 'wholesale-promo';
-      // WhatsApp number placeholder - User needs to update
       wholesaleBtn.innerHTML = `
-            <a href="https://wa.me/5493813315389?text=Hola,%20quisiera%20consultar%20por%20la%20lista%20de%20precios%20mayorista." 
-               target="_blank" 
+            <a href="?lista=mayorista" 
                class="btn-wholesale">
-               ¿Sos Mayorista? Consultar Aquí
+               ¿Sos Mayorista? Ver Lista
             </a>
         `;
       if (promoContainer) promoContainer.appendChild(wholesaleBtn);
     } else {
       // Warning/Badge for Wholesale Mode
       const badge = document.createElement('div');
-      badge.className = 'wholesale-badge';
-      badge.innerHTML = '🔒 LISTA MAYORISTA ACTIVA';
+      badge.className = 'wholesale-alert';
+      badge.innerHTML = `
+          <div class="wholesale-alert-title">🔒 LISTA MAYORISTA</div>
+          <div class="wholesale-alert-text">Solo para comercios. Compra mínima: $200.000</div>
+          <a href="https://wa.me/5493813315389?text=Hola,%20quisiera%20hacer%20un%20pedido%20mayorista." target="_blank" class="btn-wholesale" style="margin-top: 4px; border: 1px solid rgba(0,0,0,0.2);">
+              Hace tu pedido
+          </a>
+      `;
       if (promoContainer) promoContainer.appendChild(badge);
     }
 

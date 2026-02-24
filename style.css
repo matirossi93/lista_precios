@@ -487,16 +487,40 @@ footer {
 .wholesale-badge {
   background-color: var(--secondary);
   color: #212121;
-  /* Better contrast */
   text-align: center;
   padding: 0.4rem 1rem;
   font-weight: 700;
   font-size: 0.85rem;
   margin-bottom: 0.5rem;
   border-radius: 999px;
-  /* Pill */
   display: inline-block;
   box-shadow: 0 2px 4px rgba(243, 179, 42, 0.3);
+}
+
+.wholesale-alert {
+  background-color: var(--secondary);
+  color: #212121;
+  text-align: center;
+  padding: 0.8rem 1.2rem;
+  margin-bottom: 0.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(243, 179, 42, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  width: 100%;
+}
+
+.wholesale-alert-title {
+  font-weight: 800;
+  font-size: 0.95rem;
+}
+
+.wholesale-alert-text {
+  font-size: 0.8rem;
+  font-weight: 600;
+  opacity: 0.9;
 }
 
 /* ====== SHOPPING CART ====== */
