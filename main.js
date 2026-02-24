@@ -522,7 +522,7 @@ const renderBatch = () => {
             <td class="col-price price-cell">
               <div class="price-container">
                 <span>${hasPrice ? '$ ' + formatCurrency(priceVal) : ''}</span>
-                ${hasPrice ? `<button class="btn-add-cart" onclick="window.addToCart(this, '${item.code}', ${idx + 1}, '${h || 'Lista ' + (idx + 1)}')" aria-label="Agregar">+</button>` : ''}
+                ${hasPrice && !isWholesale ? `<button class="btn-add-cart" onclick="window.addToCart(this, '${item.code}', ${idx + 1}, '${h || 'Lista ' + (idx + 1)}')" aria-label="Agregar">+</button>` : ''}
               </div>
             </td>`;
       }).join('')}
@@ -684,11 +684,10 @@ const renderList = (data, filterText = '') => {
 // ====== Theme Toggle (Dark Mode) ======
 const themeToggleBtn = document.getElementById('themeToggleBtn');
 if (themeToggleBtn) {
-  // Check localStorage or system preference
+  // Check localStorage (ignore system preference for default light mode)
   const savedTheme = localStorage.getItem('manantial-theme');
-  const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-  if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+  if (savedTheme === 'dark') {
     document.documentElement.setAttribute('data-theme', 'dark');
     themeToggleBtn.textContent = '☀️';
   } else {
@@ -1081,6 +1080,11 @@ const initMobileUI = () => {
 };
 
 initCartUI();
+if (isWholesale) {
+  const floatingCartBtn = document.getElementById('cartBtn');
+  if (floatingCartBtn) floatingCartBtn.style.display = 'none';
+}
+
 initMobileUI();
 
 // Toast Helper
