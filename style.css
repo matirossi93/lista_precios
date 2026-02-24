@@ -315,24 +315,10 @@ body {
 }
 
 /* Header Rows */
-.pricing-table thead {
-  position: sticky;
-  top: 104px;
-  /* Default sticky offset for Desktop header height */
-  z-index: 10;
-}
-
-@media (max-width: 767px) {
-  .pricing-table thead {
-    top: 60px;
-    /* Offset for Mobile header height */
-  }
-}
-
 .pricing-table thead th {
   position: sticky;
-  top: 104px;
-  /* Duplicate top for TH to fix row collapse in some browsers */
+  top: var(--sticky-offset, 104px);
+  /* Default offset for first row */
   z-index: 10;
   font-weight: 700;
   text-transform: uppercase;
@@ -344,10 +330,10 @@ body {
   color: #212121;
 }
 
-@media (max-width: 767px) {
-  .pricing-table thead th {
-    top: 60px;
-  }
+/* If there are two rows of headers, push the second row below the first */
+.pricing-table thead tr:nth-child(2) th {
+  top: calc(var(--sticky-offset, 104px) + 26px);
+  /* Height of first row approximate */
 }
 
 .pricing-table thead th.th-main {
@@ -357,19 +343,10 @@ body {
   font-weight: 600;
   font-size: 0.75rem;
   padding: 6px;
-  top: 132px;
-  /* Offset for secondary header row (104px top + 28px height) */
 }
 
-@media (max-width: 767px) {
-  .pricing-table thead th.th-main {
-    top: 83px;
-    /* Offset (60px top + 23px height) */
-  }
-}
-
-/* Ensure secondary rows in thead don't overlap headers, handled by sticky thead */
-.pricing-table thead tr:first-child th:first-child {
+/* Ensure secondary rows in thead don't overlap headers */
+.pricing-table thead tr:nth-child(2) th:first-child {
   border-color: var(--border-color);
 }
 

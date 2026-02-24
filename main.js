@@ -654,7 +654,10 @@ const renderList = (data, filterText = '') => {
 
     // NEW: Add "Consult Wholesale" button if in Retail mode
     const promoContainer = document.getElementById('promoContainer');
+    const wholesaleBannerContainer = document.getElementById('wholesaleBannerContainer');
+
     if (promoContainer) promoContainer.innerHTML = ''; // Clear previous
+    if (wholesaleBannerContainer) wholesaleBannerContainer.innerHTML = '';
 
     if (!isWholesale) {
       const wholesaleBtn = document.createElement('div');
@@ -682,11 +685,22 @@ const renderList = (data, filterText = '') => {
             </a>
           </div>
       `;
-      if (promoContainer) promoContainer.appendChild(badge);
+      if (wholesaleBannerContainer) wholesaleBannerContainer.appendChild(badge);
     }
+
+    // After everything is rendered, update CSS variable for dynamic sticky headers 
+    // depending on the final height of the sticky-header-container
+    setTimeout(() => {
+      const stickyContainer = document.querySelector('.sticky-header-container');
+      if (stickyContainer) {
+        document.documentElement.style.setProperty('--sticky-offset', `${stickyContainer.offsetHeight}px`);
+      }
+    }, 100);
 
   } else {
     document.getElementById('categoryNav').style.display = 'none';
+    const wholesaleBannerContainer = document.getElementById('wholesaleBannerContainer');
+    if (wholesaleBannerContainer) wholesaleBannerContainer.style.display = 'none';
   }
 };
 
