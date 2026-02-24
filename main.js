@@ -398,7 +398,7 @@ const renderIndex = (categories) => {
     indexHtml += `
       <button class="index-btn" 
         style="--cat-color: ${color}; --text-color: ${textColor};"
-        onclick="document.getElementById('${catId}').scrollIntoView({behavior: 'smooth'})">
+        onclick="window.scrollToCategory('${catId}')">
         ${cat.name}
       </button>
     `;
@@ -406,6 +406,28 @@ const renderIndex = (categories) => {
 
   indexHtml += `</div>`;
   navContainer.innerHTML = indexHtml;
+
+  // Global scroll function to handle infinite scroll lazy-rendering
+  window.scrollToCategory = (catId) => {
+    let el = document.getElementById(catId);
+    // If the element isn't in the DOM yet, force render batches until it is
+    while (!el && currentRenderIndex < currentRenderItems.length) {
+      renderBatch();
+      el = document.getElementById(catId);
+    }
+
+    if (el) {
+      const yOffset = -70; // Header offset
+      const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+
+    // Close mobile modal if open
+    const overlay = document.getElementById('mobileModalOverlay');
+    if (overlay && !overlay.classList.contains('hidden')) {
+      overlay.click();
+    }
+  };
 
   // NEW: Populate mobile category list
   const mobileCatList = document.getElementById('mobileCategoryList');
@@ -419,17 +441,7 @@ const renderIndex = (categories) => {
       btn.style.alignItems = 'center';
       btn.style.gap = '10px';
       btn.innerHTML = `${getCategoryIcon(cat.name)} <span>${cat.name}</span>`;
-      btn.onclick = () => {
-        const el = document.getElementById(catId);
-        if (el) {
-          const yOffset = -70; // Header offset
-          const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
-          window.scrollTo({ top: y, behavior: 'smooth' });
-        }
-        // Close modal
-        const overlay = document.getElementById('mobileModalOverlay');
-        if (overlay) overlay.click();
-      };
+      btn.onclick = () => window.scrollToCategory(catId);
       mobileCatList.appendChild(btn);
     });
   }
@@ -1091,33 +1103,46 @@ const showToast = (msg) => {
 let deferredPrompt;
 const installAppBtn = document.getElementById('installAppBtn');
 
+const isIos = () => {
+  const userAgent = window.navigator.userAgent.toLowerCase();
+  return /iphone|ipad|ipod/.test(userAgent);
+};
+const isInStandaloneMode = () => ('standalone' in window.navigator) && (window.navigator.standalone);
+
+if (installAppBtn) {
+  // Show button for iOS if not installed yet
+  if (isIos() && !isInStandaloneMode()) {
+    installAppBtn.classList.remove('hidden');
+  }
+
+  installAppBtn.addEventListener('click', async () => {
+    // iOS Handling
+    if (isIos() && !isInStandaloneMode()) {
+      showToast("Para iOS: Toca 'Compartir' abajo y luego 'Agregar a Inicio'.");
+      return;
+    }
+
+    if (!deferredPrompt) {
+      showToast("La instalación no está soportada o ya está instalada.");
+      return;
+    }
+
+    // Show the install prompt
+    deferredPrompt.prompt();
+    const { outcome } = await deferredPrompt.userChoice;
+    console.log(`User response to the install prompt: ${outcome}`);
+    deferredPrompt = null;
+    installAppBtn.classList.add('hidden');
+  });
+}
+
 window.addEventListener('beforeinstallprompt', (e) => {
-  // Prevent the mini-infobar from appearing on mobile
   e.preventDefault();
-  // Stash the event so it can be triggered later.
   deferredPrompt = e;
-  // Update UI notify the user they can install the PWA
   if (installAppBtn) {
     installAppBtn.classList.remove('hidden');
   }
 });
-
-if (installAppBtn) {
-  installAppBtn.addEventListener('click', async () => {
-    if (!deferredPrompt) {
-      return;
-    }
-    // Show the install prompt
-    deferredPrompt.prompt();
-    // Wait for the user to respond to the prompt
-    const { outcome } = await deferredPrompt.userChoice;
-    console.log(`User response to the install prompt: ${outcome}`);
-    // We've used the prompt, and can't use it again, throw it away
-    deferredPrompt = null;
-    // Hide the button
-    installAppBtn.classList.add('hidden');
-  });
-}
 
 window.addEventListener('appinstalled', (evt) => {
   // Log install to analytics

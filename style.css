@@ -1104,6 +1104,15 @@ footer {
   background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent);
 }
 
+[data-theme="dark"] .pricing-table thead th {
+  color: var(--bg-color);
+}
+
+[data-theme="dark"] .pricing-table thead th.th-main {
+  background-color: #2a2a2a;
+  color: #bbbbbb;
+  border-color: #444;
+}
 
 /* ====== MOBILE RESPONSIVE OVERRIDES ====== */
 @media (max-width: 600px) {
