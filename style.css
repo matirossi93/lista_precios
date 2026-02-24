@@ -318,7 +318,6 @@ body {
 .pricing-table thead th {
   position: sticky;
   top: var(--sticky-offset, 104px);
-  /* Default offset for first row */
   z-index: 10;
   font-weight: 700;
   text-transform: uppercase;
@@ -330,12 +329,6 @@ body {
   color: #212121;
 }
 
-/* If there are two rows of headers, push the second row below the first */
-.pricing-table thead tr:nth-child(2) th {
-  top: calc(var(--sticky-offset, 104px) + 26px);
-  /* Height of first row approximate */
-}
-
 .pricing-table thead th.th-main {
   background-color: #f5f7fa;
   border-color: var(--border-color);
@@ -343,11 +336,6 @@ body {
   font-weight: 600;
   font-size: 0.75rem;
   padding: 6px;
-}
-
-/* Ensure secondary rows in thead don't overlap headers */
-.pricing-table thead tr:nth-child(2) th:first-child {
-  border-color: var(--border-color);
 }
 
 /* Column Widths */
