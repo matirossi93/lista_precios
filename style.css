@@ -316,13 +316,25 @@ body {
 
 /* Header Rows */
 .pricing-table thead th {
+  position: sticky;
+  top: 104px;
+  /* Default sticky offset for Desktop header height */
+  z-index: 10;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 0.8rem;
   text-align: center;
-  /* Colors set inline */
+  background-color: #f5f7fa;
+  /* Need solid background so rows don't show through */
   text-shadow: none;
   color: #212121;
+}
+
+@media (max-width: 767px) {
+  .pricing-table thead th {
+    top: 60px;
+    /* Offset for Mobile header height */
+  }
 }
 
 .pricing-table thead th.th-main {
@@ -334,6 +346,7 @@ body {
   padding: 6px;
 }
 
+/* Ensure secondary rows in thead don't overlap headers, handled by sticky thead */
 .pricing-table thead tr:first-child th:first-child {
   border-color: var(--border-color);
 }
