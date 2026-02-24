@@ -673,9 +673,14 @@ const renderList = (data, filterText = '') => {
       badge.innerHTML = `
           <div class="wholesale-alert-title">🔒 LISTA MAYORISTA</div>
           <div class="wholesale-alert-text">Solo para comercios. Compra mínima: $200.000</div>
-          <a href="https://wa.me/5493813315389?text=Hola,%20quisiera%20hacer%20un%20pedido%20mayorista." target="_blank" class="btn-wholesale" style="margin-top: 4px; border: 1px solid rgba(0,0,0,0.2);">
-              Hace tu pedido
-          </a>
+          <div style="display: flex; gap: 8px; width: 100%; max-width: 400px; margin-top: 4px;">
+            <a href="https://wa.me/5493813315389?text=Hola,%20quisiera%20hacer%20un%20pedido%20mayorista." target="_blank" class="btn-wholesale" style="flex: 1; justify-content: center; border: 1px solid rgba(0,0,0,0.2);">
+                Hace tu pedido
+            </a>
+            <a href="/" class="btn-wholesale" style="flex: 1; justify-content: center; background: #ea4335; border: 1px solid rgba(0,0,0,0.2);">
+                ⬅️ Volver
+            </a>
+          </div>
       `;
       if (promoContainer) promoContainer.appendChild(badge);
     }
