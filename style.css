@@ -305,7 +305,6 @@ body {
   border-collapse: collapse;
   font-size: 0.9rem;
   min-width: 600px;
-  table-layout: fixed;
 }
 
 .pricing-table th,
