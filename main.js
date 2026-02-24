@@ -486,14 +486,12 @@ const renderBatch = () => {
           <div class="table-responsive">
             <table class="pricing-table">
               <thead>
-                ${isNewCategory ? `<tr>
-                  <th colspan="2" class="th-main" style="border-right: none;"></th>
-                  <th colspan="${colSpan}" class="th-main" style="border-left: none;">PRECIO</th>
-                </tr>` : ''}
+                ${isNewCategory ? `<tr style="display: none;"></tr>` : ''}
                 <tr>
                   <th class="col-code">COD</th>
                   <th class="col-desc">DESCRIPCION</th>
                   ${headers.map(h => `<th class="col-price">${h}</th>`).join('')}
+                  ${!isWholesale ? '<th class="col-cart"></th>' : ''}
                 </tr>
               </thead>
               <tbody>
