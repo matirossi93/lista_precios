@@ -686,14 +686,7 @@ const renderList = (data, filterText = '') => {
       if (wholesaleBannerContainer) wholesaleBannerContainer.appendChild(badge);
     }
 
-    // After everything is rendered, update CSS variable for dynamic sticky headers 
-    // depending on the final height of the sticky-header-container
-    setTimeout(() => {
-      const stickyContainer = document.querySelector('.sticky-header-container');
-      if (stickyContainer) {
-        document.documentElement.style.setProperty('--sticky-offset', `${stickyContainer.offsetHeight}px`);
-      }
-    }, 100);
+
 
   } else {
     document.getElementById('categoryNav').style.display = 'none';
@@ -1176,3 +1169,16 @@ window.addEventListener('appinstalled', (evt) => {
     installAppBtn.classList.add('hidden');
   }
 });
+
+// ====== Dynamic Sticky Header Offset ======
+// Ensure the table headers always dock perfectly below the top navigation bar
+// even if fonts load late, the user rotates their device, or the responsive layout wraps.
+const stickyContainer = document.querySelector('.sticky-header-container');
+if (stickyContainer) {
+  const resizeObserver = new ResizeObserver(entries => {
+    for (const entry of entries) {
+      document.documentElement.style.setProperty('--sticky-offset', `${entry.target.offsetHeight}px`);
+    }
+  });
+  resizeObserver.observe(stickyContainer);
+}

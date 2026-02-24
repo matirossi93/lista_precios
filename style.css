@@ -269,14 +269,12 @@ body {
   max-width: 100%;
   margin: 0 auto;
   padding: 1rem;
-  overflow-x: auto;
 }
 
 .category-section {
   margin-bottom: 2rem;
   background: white;
   border-radius: 12px;
-  overflow: hidden;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   border: 1px solid var(--border-color);
   border-top-width: 5px;
@@ -304,7 +302,6 @@ body {
   width: 100%;
   border-collapse: collapse;
   font-size: 0.9rem;
-  min-width: 600px;
 }
 
 .pricing-table th,
@@ -315,19 +312,26 @@ body {
 }
 
 /* Header Rows */
+.pricing-table thead {
+  position: relative;
+  z-index: 10;
+}
+
 .pricing-table thead th {
   position: sticky;
-  top: var(--sticky-offset, 104px);
+  top: var(--sticky-offset, 130px);
   z-index: 10;
+  background-color: #f5f7fa;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 0.8rem;
   text-align: center;
-  background-color: #f5f7fa;
   /* Need solid background so rows don't show through */
   text-shadow: none;
   color: #212121;
 }
+
+
 
 .pricing-table thead th.th-main {
   background-color: #f5f7fa;
@@ -1221,16 +1225,9 @@ footer {
   }
 
   .table-responsive {
-    overflow-x: auto;
-    /* Allow horizontal scroll for the table itself */
-    -webkit-overflow-scrolling: touch;
     padding-bottom: 0.5rem;
   }
 
-  .pricing-table {
-    min-width: 480px;
-    /* Allow enough room so text doesn't squeeze too much */
-  }
 
   .pricing-table th,
   .pricing-table td {
