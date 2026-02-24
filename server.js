@@ -204,10 +204,11 @@ const parseCSV = (csvText, isWholesale) => {
                     continue;
                 }
 
+                // Item Detection
                 if (col0 && /^\d+$/.test(col0)) {
                     code = col0;
                     desc = col1;
-                    price1 = parsePrice(columns[3]);
+                    price1 = parsePrice(columns[3]) || parsePrice(columns[2]);
                     price2 = parsePrice(columns[4]);
                     price3 = parsePrice(columns[5]);
                     price4 = parsePrice(columns[6]);
@@ -242,6 +243,7 @@ const parseCSV = (csvText, isWholesale) => {
                 }
             }
 
+            // Add Primary Item if found
             if (code && desc && currentCategory) {
                 const item = { code, description: desc, price1, price2, price3, price4, price5 };
 
@@ -250,6 +252,22 @@ const parseCSV = (csvText, isWholesale) => {
                     currentCategory.brands.push(currentBrand);
                 }
                 currentBrand.items.push(item);
+            }
+
+            // Add Secondary Item (For 2-column layouts like "ACCESORIOS Y VENENOS" in Jujuy)
+            if (!isWholesale && columns[5] && /^\d+$/.test(columns[5]) && columns[6] && currentCategory) {
+                const code2 = columns[5];
+                const desc2 = columns[6];
+                const p1_2 = parsePrice(columns[7]) || parsePrice(columns[8]);
+
+                if (code2 && desc2) {
+                    const item2 = { code: code2, description: desc2, price1: p1_2, price2: null, price3: null, price4: null, price5: null };
+                    if (!currentBrand) {
+                        currentBrand = { name: currentCategory.name, items: [] };
+                        currentCategory.brands.push(currentBrand);
+                    }
+                    currentBrand.items.push(item2);
+                }
             }
         } catch (err) {
             console.warn(`Error procesando fila ${i + 1}`, err);
