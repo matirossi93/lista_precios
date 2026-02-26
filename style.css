@@ -1231,12 +1231,13 @@ footer {
 
   .pricing-table th,
   .pricing-table td {
-    padding: 0.4rem 0.2rem;
+    padding: 0.35rem 0.2rem;
     font-size: 0.75rem;
   }
 
   .pricing-table th {
     font-size: 0.65rem;
+    padding: 0.35rem 0.1rem;
   }
 
   .brand-row td {
@@ -1245,16 +1246,22 @@ footer {
   }
 
   /* Squeeze columns gracefully */
+  .col-code {
+    width: 35px;
+    min-width: 35px;
+    padding: 0.1rem !important;
+  }
+
   .col-desc {
-    min-width: 120px;
+    min-width: 95px;
     white-space: normal;
     line-height: 1.15;
   }
 
   .price-cell {
-    font-size: 0.85rem;
-    min-width: 60px;
-    padding: 0.2rem !important;
+    font-size: 0.8rem;
+    min-width: 48px;
+    padding: 0.15rem !important;
   }
 
   .price-container {
