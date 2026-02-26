@@ -966,7 +966,8 @@ window.updateCartItemValue = (cartKey, type, value, unitPrice) => {
   if (type === 'qty') {
     shoppingCart[cartKey].quantity = numValue;
   } else if (type === 'amount') {
-    shoppingCart[cartKey].quantity = numValue / unitPrice;
+    // Round mathematically derived quantities to max 3 decimal places
+    shoppingCart[cartKey].quantity = parseFloat((numValue / unitPrice).toFixed(3));
   }
 
   updateCartUI();
@@ -1001,6 +1002,8 @@ const updateCartUI = () => {
     const cartKey = `${item.code}_${priceIndex}`;
 
     const displayName = isWholesale ? variantName : (variantName || 'Unidad');
+    // Ensure display quantity is max 3 decimal places without trailing zeroes
+    const qtyStr = Number(quantity.toFixed(3)).toString();
 
     itemsHtml.push(`
       <li class="cart-item">
@@ -1010,7 +1013,7 @@ const updateCartUI = () => {
           <div class="cart-item-controls-advanced">
             <div class="input-group">
               <label>Cantidad</label>
-              <input type="number" class="cart-input-qty" step="any" min="0" value="${quantity}" 
+              <input type="number" class="cart-input-qty" step="any" min="0" value="${qtyStr}" 
                      onchange="window.updateCartItemValue('${cartKey}', 'qty', this.value, ${priceVal})"
                      onblur="window.updateCartItemValue('${cartKey}', 'qty', this.value, ${priceVal})">
             </div>
