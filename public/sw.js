@@ -54,8 +54,26 @@ self.addEventListener('fetch', (event) => {
         return;
     }
 
-    // Caso general 2: Archivos de la App web estáticos (Stale-While-Revalidate modificado)
-    // Vite hace HMR (Hot Module Replacement), así que no cachearemos todo a lo loco en dev
+    // Caso especial 2: Navegación de páginas HTML (index.html) -> Siempre Network First
+    // Esto previene que el HTML viejo pida archivos CSS/JS con hashes viejos que ya no existen en el servidor
+    if (event.request.mode === 'navigate') {
+        event.respondWith(
+            fetch(event.request)
+                .then((networkResponse) => {
+                    caches.open(CACHE_NAME).then((cache) => {
+                        cache.put(event.request, networkResponse.clone());
+                    });
+                    return networkResponse;
+                })
+                .catch(() => {
+                    // Fallback a la caché si estamos offline
+                    return caches.match(event.request);
+                })
+        );
+        return;
+    }
+
+    // Caso general 3: Archivos de la App web estáticos (Assets: CSS, JS, SVG, etc.) -> Stale-While-Revalidate
     if (event.request.method === 'GET' && !requestUrl.pathname.includes('hot-update')) {
         event.respondWith(
             caches.match(event.request).then((cachedResponse) => {
@@ -68,8 +86,7 @@ self.addEventListener('fetch', (event) => {
                     });
                     return networkResponse;
                 }).catch(() => {
-                    // Fallback final en caso offline
-                    return cachedResponse;
+                    // Ignoramos errores de red en el background
                 });
                 return cachedResponse || fetchPromise;
             })
