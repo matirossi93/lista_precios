@@ -953,6 +953,25 @@ window.updateCartQuantity = (cartKey, delta) => {
   }
 };
 
+window.updateCartItemValue = (cartKey, type, value, unitPrice) => {
+  if (!shoppingCart[cartKey]) return;
+
+  const numValue = parseFloat(value);
+  if (isNaN(numValue) || numValue <= 0) {
+    delete shoppingCart[cartKey];
+    updateCartUI();
+    return;
+  }
+
+  if (type === 'qty') {
+    shoppingCart[cartKey].quantity = numValue;
+  } else if (type === 'amount') {
+    shoppingCart[cartKey].quantity = numValue / unitPrice;
+  }
+
+  updateCartUI();
+};
+
 const updateCartUI = () => {
   const badge = document.getElementById('cartBadge');
   const itemsList = document.getElementById('cartItemsList');
@@ -988,17 +1007,29 @@ const updateCartUI = () => {
         <div class="cart-item-header">
           <span class="cart-item-title">${item.description} <br><small style="color:#757575;">(Cod: ${item.code} - ${displayName})</small></span>
         </div>
-        <div class="cart-item-controls">
-          <span class="cart-item-price">$${formatCurrency(priceVal)}</span>
-          <div class="qty-controls">
-            <button class="btn-qty" onclick="window.updateCartQuantity('${cartKey}', -1)">-</button>
-            <span class="qty-display">${quantity}</span>
-            <button class="btn-qty" onclick="window.updateCartQuantity('${cartKey}', 1)">+</button>
+          <div class="cart-item-controls-advanced">
+            <div class="input-group">
+              <label>Cantidad</label>
+              <input type="number" class="cart-input-qty" step="any" min="0" value="${quantity}" 
+                     onchange="window.updateCartItemValue('${cartKey}', 'qty', this.value, ${priceVal})"
+                     onblur="window.updateCartItemValue('${cartKey}', 'qty', this.value, ${priceVal})">
+            </div>
+            
+            <div class="qty-math-divider">× $${formatCurrency(priceVal)} =</div>
+
+            <div class="input-group">
+              <label>Monto ($)</label>
+              <input type="number" class="cart-input-amount" step="any" min="0" value="${(priceVal * quantity).toFixed(2).replace(/\.00$/, '')}" 
+                     onchange="window.updateCartItemValue('${cartKey}', 'amount', this.value, ${priceVal})"
+                     onblur="window.updateCartItemValue('${cartKey}', 'amount', this.value, ${priceVal})">
+            </div>
+
+            <button class="btn-remove-icon" onclick="window.removeFromCart('${cartKey}')" aria-label="Quitar">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+            </button>
           </div>
-          <button class="btn-remove" onclick="window.removeFromCart('${cartKey}')">Quitar</button>
-        </div>
-      </li>
-    `);
+        </li>
+      `);
   });
 
   itemsList.innerHTML = itemsHtml.join('');
@@ -1010,19 +1041,143 @@ const updateCartUI = () => {
   sendBtn.disabled = false;
 };
 
+window.printCart = () => {
+  const cartValues = Object.values(shoppingCart);
+  if (cartValues.length === 0) return;
+
+  let total = 0;
+  let itemsHtml = '';
+
+  cartValues.forEach((cartRec) => {
+    const { item, quantity, variantName, priceVal } = cartRec;
+    const lineTotal = priceVal * quantity;
+    total += lineTotal;
+    const displayName = isWholesale ? variantName : (variantName || 'Unidad');
+    const qtyStr = Number(quantity.toFixed(3)).toString();
+
+    itemsHtml += `
+      <tr>
+        <td class="qty">${qtyStr}</td>
+        <td class="desc">${item.description.substring(0, 20)}</td>
+        <td class="amt">$${formatCurrency(lineTotal)}</td>
+      </tr>
+    `;
+  });
+
+  const now = new Date();
+  const dateStr = now.toLocaleDateString();
+  const timeStr = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+
+  const printWindow = window.open('', '_blank');
+  printWindow.document.write(`
+    <html>
+      <head>
+        <title>Ticket Presupuesto</title>
+        <style>
+          @page { margin: 0; }
+          body { 
+            font-family: 'Courier New', Courier, monospace; 
+            width: 80mm; 
+            max-width: 80mm; 
+            margin: 0; 
+            padding: 5mm; 
+            font-size: 12px;
+            color: #000;
+            background: #fff;
+          }
+          .header { text-align: center; margin-bottom: 10px; }
+          .header h2 { margin: 0; font-size: 16px; font-weight: bold; }
+          .header p { margin: 2px 0; font-size: 11px; }
+          .divider { border-top: 1px dashed #000; margin: 10px 0; }
+          table { width: 100%; border-collapse: collapse; }
+          th { text-align: left; border-bottom: 1px dashed #000; padding-bottom: 4px; font-weight: 600; font-size: 11px;}
+          td { padding: 4px 0; vertical-align: top; font-size: 11px;}
+          td.qty { width: 15%; }
+          td.desc { width: 55%; overflow: hidden; }
+          td.amt { width: 30%; text-align: right; }
+          th.amt-th { text-align: right; }
+          .total-row { 
+            display: flex; 
+            justify-content: space-between; 
+            font-weight: bold; 
+            font-size: 16px; 
+            margin-top: 10px;
+          }
+          .footer-msg { text-align: center; margin-top: 15px; font-size: 11px; }
+        </style>
+      </head>
+      <body>
+        <div class="header">
+          <h2>EL MANANTIAL</h2>
+          <p>Semillería y Forrajería</p>
+          <p>Av. Jujuy 1672, Tucumán</p>
+          <p>${dateStr} - ${timeStr}</p>
+        </div>
+        
+        <div class="divider"></div>
+        <div style="text-align: center; font-weight: bold; margin-bottom: 5px;">PRESUPUESTO</div>
+        <div style="text-align: center; font-size: 9px; margin-bottom: 10px;">Doc. no válido como factura</div>
+        
+        <table>
+          <thead>
+            <tr>
+              <th>CANT</th>
+              <th>DESCRIPCIÓN</th>
+              <th class="amt-th">MONTO</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${itemsHtml}
+          </tbody>
+        </table>
+        
+        <div class="divider"></div>
+        <div class="total-row">
+          <span>TOTAL:</span>
+          <span>$${formatCurrency(total)}</span>
+        </div>
+        
+        <div class="footer-msg">
+          ¡Gracias por su visita!
+        </div>
+        <script>
+          window.onload = function() { window.print(); window.close(); }
+        </script>
+      </body>
+    </html>
+  `);
+  printWindow.document.close();
+};
+
 // UI Toggles & WhatsApp
 const initCartUI = () => {
   const cartBtn = document.getElementById('cartBtn');
   const closeBtn = document.getElementById('closeCartBtn');
   const panel = document.getElementById('cartPanel');
   const sendBtn = document.getElementById('sendOrderBtn');
+  const printBtn = document.getElementById('printCartBtn');
 
   if (!cartBtn || !closeBtn || !panel || !sendBtn) return;
 
-  const toggleCart = () => panel.classList.toggle('open');
+  const toggleCart = () => {
+    panel.classList.toggle('open');
+    if (printBtn) {
+      if (branchParam === 'jujuy' && !isWholesale) {
+        printBtn.classList.remove('hidden');
+      } else {
+        printBtn.classList.add('hidden');
+      }
+    }
+  };
 
   cartBtn.addEventListener('click', toggleCart);
   closeBtn.addEventListener('click', toggleCart);
+
+  if (printBtn) {
+    printBtn.addEventListener('click', () => {
+      window.printCart();
+    });
+  }
 
   sendBtn.addEventListener('click', () => {
     const cartValues = Object.values(shoppingCart);
@@ -1036,7 +1191,11 @@ const initCartUI = () => {
       const lineTotal = priceVal * quantity;
       total += lineTotal;
       const displayName = isWholesale ? variantName : (variantName || 'Unidad');
-      text += `- ${quantity}x ${item.description} [${displayName}] ($${formatCurrency(priceVal)} c/u)\n`;
+
+      // Clean up quantity display (e.g. 0.500 -> 0.5, 1.000 -> 1)
+      const qtyStr = Number(quantity.toFixed(3)).toString();
+
+      text += `- ${qtyStr}x ${item.description} [${displayName}] ($${formatCurrency(priceVal)} c/u)\n`;
     });
 
     text += `\n*Total estimado: $${formatCurrency(total)}*`;
