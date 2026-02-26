@@ -295,16 +295,14 @@ body {
   }
 
   .catalog-btn {
-    padding: 0.4rem;
-    /* Icon only or compact padding */
-    font-size: 0;
-    /* Hide text, keep icon */
+    padding: 0.35rem 0.6rem;
+    font-size: 0.75rem;
   }
 
   .catalog-btn svg {
-    margin-right: 0 !important;
-    width: 20px;
-    height: 20px;
+    margin-right: 4px !important;
+    width: 16px;
+    height: 16px;
   }
 }
 
