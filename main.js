@@ -491,7 +491,7 @@ const renderBatch = () => {
                   <th class="col-code">COD</th>
                   <th class="col-desc">DESCRIPCION</th>
                   ${headers.map(h => `<th class="col-price">${h}</th>`).join('')}
-                  ${!isWholesale ? '<th class="col-cart"></th>' : ''}
+                  <th class="col-cart"></th>
                 </tr>
               </thead>
               <tbody>
@@ -520,7 +520,7 @@ const renderBatch = () => {
             <td class="col-price price-cell">
               <div class="price-container">
                 <span>${hasPrice ? '$ ' + formatCurrency(priceVal) : ''}</span>
-                ${hasPrice && !isWholesale ? `<button class="btn-add-cart" onclick="window.addToCart(this, '${item.code}', ${idx + 1}, '${h || 'Lista ' + (idx + 1)}')" aria-label="Agregar">+</button>` : ''}
+                ${hasPrice ? `<button class="btn-add-cart" onclick="window.addToCart(this, '${item.code}', ${idx + 1}, '${h || 'Lista ' + (idx + 1)}')" aria-label="Agregar">+</button>` : ''}
               </div>
             </td>`;
       }).join('')}
@@ -1256,10 +1256,6 @@ const initMobileUI = () => {
 };
 
 initCartUI();
-if (isWholesale) {
-  const floatingCartBtn = document.getElementById('cartBtn');
-  if (floatingCartBtn) floatingCartBtn.style.display = 'none';
-}
 
 initMobileUI();
 
