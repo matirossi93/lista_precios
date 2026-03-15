@@ -29,7 +29,7 @@ const KNOWN_CATEGORIES = [
     'CEREALES PARA DESAYUNO', 'CEREALES', 'FORRAJES', 'LEGUMBRES',
     'CONDIMENTOS', 'FRUTOS SECOS', 'SNACKS', 'VENENOS', 'ACCESORIOS',
     'BALANCEADOS', 'ALIMENTO PERRO Y GATO', 'CEREALES Y MEZCLAS',
-    'COMESTIBLES', 'ACCESORIOS Y VENENOS', 'LIMPIEZA', 'PILETA',
+    'COMESTIBLES', 'ACCESORIOS Y VENENOS', 'LIMPIEZA', 'LIQUIDOS', 'PILETA',
     'VARIOS', 'ANIMALES DE GRANJA', 'SECCIONES'
 ];
 
@@ -90,6 +90,8 @@ const parseCSV = (csvText, isWholesale) => {
     let proxyCatDog = null;
     let proxyCatCat = null;
     let isCurrentlySplitting = false;
+    let pendingColumns = null; // Columns detected from a COD header row, applied on next item or category
+    let categoryHasItems = false; // Track if current category already has items
 
     for (let i = 0; i < lines.length; i++) {
         const line = lines[i];
@@ -165,11 +167,18 @@ const parseCSV = (csvText, isWholesale) => {
                         currentRetailLabel5
                     ].filter(c => c && c.trim() !== '');
 
-                    if (currentCategory) {
-                        currentCategory.columns = newCols;
-                    }
-                    if (isCurrentlySplitting && proxyCatCat) {
-                        proxyCatCat.columns = newCols;
+                    // If the current category already has items, this header is for the NEXT category.
+                    // Store as pending and don't overwrite the current category's columns.
+                    if (currentCategory && categoryHasItems) {
+                        pendingColumns = newCols;
+                    } else {
+                        // Category was just created (no items yet), apply columns directly
+                        if (currentCategory) {
+                            currentCategory.columns = newCols;
+                        }
+                        if (isCurrentlySplitting && proxyCatCat) {
+                            proxyCatCat.columns = newCols;
+                        }
                     }
                     continue;
                 }
@@ -179,14 +188,18 @@ const parseCSV = (csvText, isWholesale) => {
 
                 if (col0 && KNOWN_CATEGORIES.includes(col0)) {
                     isCurrentlySplitting = false;
+                    categoryHasItems = false;
 
-                    const activeCols = [
+                    // Use pending columns if a COD header was seen before this category,
+                    // otherwise fall back to the current label variables
+                    const activeCols = pendingColumns || [
                         currentRetailLabel1,
                         currentRetailLabel2,
                         currentRetailLabel3,
                         currentRetailLabel4,
                         currentRetailLabel5
                     ].filter(c => c && c.trim() !== '');
+                    pendingColumns = null;
 
                     if (col0 === 'ALIMENTO PERRO Y GATO') {
                         isCurrentlySplitting = true;
@@ -257,6 +270,7 @@ const parseCSV = (csvText, isWholesale) => {
                     currentCategory.brands.push(currentBrand);
                 }
                 currentBrand.items.push(item);
+                categoryHasItems = true;
             }
 
             // Add Secondary Item (For 2-column layouts like "ACCESORIOS Y VENENOS" in Jujuy)

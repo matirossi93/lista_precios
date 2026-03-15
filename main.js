@@ -58,6 +58,7 @@ const CATEGORY_COLORS = {
   'COMESTIBLES': '#ff9800',
   'ACCESORIOS Y VENENOS': '#7b1fa2',
   'LIMPIEZA': '#0288d1',
+  'LIQUIDOS': '#0097a7',
   'PILETA': '#00bcd4',
   'VARIOS': '#607d8b',
   'ANIMALES DE GRANJA': '#795548',
