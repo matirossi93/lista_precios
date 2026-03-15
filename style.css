@@ -159,6 +159,20 @@ body {
   line-height: 1.1;
 }
 
+.last-updated {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  white-space: nowrap;
+  padding: 0.2rem 0.5rem;
+  background: var(--bg-color);
+  border-radius: 4px;
+}
+
+.last-updated:empty {
+  display: none;
+}
+
 .catalog-btn {
   display: inline-flex;
   align-items: center;

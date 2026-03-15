@@ -11,6 +11,11 @@ const PORT = process.env.PORT || 3000;
 
 app.use(cors());
 
+// In-memory cache to avoid hitting Google Sheets on every request
+// Cache duration: 5 minutes
+const CACHE_TTL = 5 * 60 * 1000;
+const apiCache = {};
+
 // Google Sheet URLs
 const SHEET_URLS = {
     mayorista: 'https://docs.google.com/spreadsheets/d/17iVa59vBeEt3UF3mMdt1ztLXqDL5L2hNylnnJ8p4RQU/export?format=csv&gid=1909734028',
@@ -291,10 +296,17 @@ app.get('/api/precios', async (req, res) => {
         else branch = 'sm';
 
         const isWholesale = listType === 'mayorista';
+        const cacheKey = isWholesale ? 'mayorista' : branch;
         const targetUrl = isWholesale ? SHEET_URLS.mayorista : SHEET_URLS[branch];
 
         if (!targetUrl) {
             return res.status(400).json({ error: 'Lista no encontrada' });
+        }
+
+        // Check cache
+        const cached = apiCache[cacheKey];
+        if (cached && (Date.now() - cached.timestamp) < CACHE_TTL) {
+            return res.json(cached.data);
         }
 
         const response = await fetch(targetUrl);
@@ -305,12 +317,20 @@ app.get('/api/precios', async (req, res) => {
         const csvText = await response.text();
         const data = parseCSV(csvText, isWholesale);
 
-        res.json({
+        const responseData = {
             success: true,
             tipo: isWholesale ? 'mayorista' : 'minorista',
             sucursal: isWholesale ? null : branch,
             data: data
-        });
+        };
+
+        // Store in cache
+        apiCache[cacheKey] = {
+            timestamp: Date.now(),
+            data: responseData
+        };
+
+        res.json(responseData);
     } catch (error) {
         console.error('Error in /api/precios:', error);
         res.status(500).json({ success: false, error: 'Hubo un error al obtener o procesar la lista de precios.' });
