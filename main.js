@@ -701,6 +701,8 @@ const updateCartUI = () => {
   const itemsList = document.getElementById('cartItemsList');
   const totalEl = document.getElementById('cartTotalValue');
   const sendBtn = document.getElementById('sendOrderBtn');
+  const printBtn = document.getElementById('printCartBtn');
+  const clearBtn = document.getElementById('clearCartBtn');
 
   let totalItems = 0;
   let totalPrice = 0;
@@ -713,6 +715,8 @@ const updateCartUI = () => {
     badge.classList.add('hidden');
     totalEl.textContent = '$0';
     sendBtn.disabled = true;
+    if (printBtn) printBtn.classList.add('hidden');
+    if (clearBtn) clearBtn.classList.add('hidden');
     return;
   }
 
@@ -763,6 +767,15 @@ const updateCartUI = () => {
 
   totalEl.textContent = `$${formatCurrency(totalPrice)}`;
   sendBtn.disabled = false;
+  if (printBtn) printBtn.classList.remove('hidden');
+  if (clearBtn) clearBtn.classList.remove('hidden');
+};
+
+window.clearCart = () => {
+  shoppingCart = {};
+  updateCartUI();
+  saveCart();
+  showToast('Carrito vaciado');
 };
 
 window.printCart = () => {
@@ -871,6 +884,11 @@ window.printCart = () => {
     </html>
   `);
   printWindow.document.close();
+
+  // Clear cart after printing
+  setTimeout(() => {
+    window.clearCart();
+  }, 500);
 };
 
 // UI Toggles & WhatsApp
@@ -886,7 +904,8 @@ const initCartUI = () => {
   const toggleCart = () => {
     panel.classList.toggle('open');
     if (printBtn) {
-      if (activeBranch === 'jujuy' && !isWholesale) {
+      const hasItems = Object.keys(shoppingCart).length > 0;
+      if (hasItems) {
         printBtn.classList.remove('hidden');
       } else {
         printBtn.classList.add('hidden');

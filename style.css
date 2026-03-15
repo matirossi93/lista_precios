@@ -926,6 +926,38 @@ footer {
   background-color: #1e293b;
 }
 
+.btn-clear-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0.6rem;
+  background-color: transparent;
+  color: #d32f2f;
+  border: 1px solid #d32f2f;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: 0.5rem;
+}
+
+.btn-clear-cart:hover {
+  background-color: #ffebee;
+  border-color: #b71c1c;
+  color: #b71c1c;
+}
+
+[data-theme="dark"] .btn-clear-cart {
+  color: #ef5350;
+  border-color: #ef5350;
+}
+
+[data-theme="dark"] .btn-clear-cart:hover {
+  background-color: rgba(229, 57, 53, 0.15);
+}
+
 /* Toast Notification */
 .toast {
   position: fixed;
