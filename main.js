@@ -778,15 +778,125 @@ window.clearCart = () => {
   showToast('Carrito vaciado');
 };
 
+// ====== ESC/POS + RawBT helpers ======
+
+const ESC = '\x1B';
+const GS = '\x1D';
+const ESCPOS = {
+  INIT: ESC + '@',
+  CENTER: ESC + 'a\x01',
+  LEFT: ESC + 'a\x00',
+  RIGHT: ESC + 'a\x02',
+  BOLD_ON: ESC + 'E\x01',
+  BOLD_OFF: ESC + 'E\x00',
+  DOUBLE_ON: GS + '!\x11',   // double width + double height
+  DOUBLE_OFF: GS + '!\x00',
+  CUT: GS + 'V\x00',         // full cut
+  FEED3: ESC + 'd\x03',      // feed 3 lines
+};
+
+const isMobileOrTablet = () => {
+  const ua = navigator.userAgent || '';
+  return /Android|iPhone|iPad|iPod|webOS|BlackBerry|IEMobile|Opera Mini/i.test(ua)
+    || (navigator.maxTouchPoints > 1 && /Macintosh/i.test(ua));
+};
+
+const padRight = (str, len) => str.length >= len ? str.substring(0, len) : str + ' '.repeat(len - str.length);
+const padLeft = (str, len) => str.length >= len ? str.substring(0, len) : ' '.repeat(len - str.length) + str;
+
+const buildEscPosTicket = (cartValues, branchAddress) => {
+  const LINE = 48; // chars per line on 80mm thermal
+  const DIVIDER = '-'.repeat(LINE);
+
+  const now = new Date();
+  const dateStr = now.toLocaleDateString();
+  const timeStr = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+
+  let ticket = '';
+  ticket += ESCPOS.INIT;
+
+  // Header
+  ticket += ESCPOS.CENTER;
+  ticket += ESCPOS.DOUBLE_ON;
+  ticket += 'EL MANANTIAL\n';
+  ticket += ESCPOS.DOUBLE_OFF;
+  ticket += 'Semilleria y Forrajeria\n';
+  ticket += branchAddress + '\n';
+  ticket += dateStr + ' - ' + timeStr + '\n';
+  ticket += '\n';
+
+  ticket += ESCPOS.BOLD_ON;
+  ticket += 'PRESUPUESTO\n';
+  ticket += ESCPOS.BOLD_OFF;
+  ticket += 'Doc. no valido como factura\n';
+  ticket += '\n';
+
+  // Column headers
+  ticket += ESCPOS.LEFT;
+  ticket += DIVIDER + '\n';
+  ticket += ESCPOS.BOLD_ON;
+  ticket += padRight('CANT', 6) + padRight('DESCRIPCION', 26) + padLeft('MONTO', 16) + '\n';
+  ticket += ESCPOS.BOLD_OFF;
+  ticket += DIVIDER + '\n';
+
+  // Items
+  let total = 0;
+  cartValues.forEach(({ item, quantity, priceVal }) => {
+    const lineTotal = priceVal * quantity;
+    total += lineTotal;
+    const qtyStr = Number(quantity.toFixed(3)).toString();
+    const desc = item.description.substring(0, 25);
+    const amtStr = '$' + formatCurrency(lineTotal);
+
+    ticket += padRight(qtyStr, 6) + padRight(desc, 26) + padLeft(amtStr, 16) + '\n';
+  });
+
+  // Total
+  ticket += DIVIDER + '\n';
+  ticket += ESCPOS.BOLD_ON;
+  ticket += ESCPOS.DOUBLE_ON;
+  ticket += ESCPOS.RIGHT;
+  ticket += 'TOTAL: $' + formatCurrency(total) + '\n';
+  ticket += ESCPOS.DOUBLE_OFF;
+  ticket += ESCPOS.BOLD_OFF;
+  ticket += '\n';
+
+  // Footer
+  ticket += ESCPOS.CENTER;
+  ticket += 'Gracias por su visita!\n';
+  ticket += ESCPOS.FEED3;
+  ticket += ESCPOS.CUT;
+
+  return ticket;
+};
+
+const printViaRawBT = (ticketStr) => {
+  const encoded = btoa(unescape(encodeURIComponent(ticketStr)));
+  window.location.href = 'rawbt:base64,' + encoded;
+};
+
+// ====== PRINT FUNCTION ======
+
 window.printCart = () => {
   const cartValues = Object.values(shoppingCart);
   if (cartValues.length === 0) return;
 
+  const branchAddress = BRANCH_ADDRESSES[activeBranch] || 'Tucuman';
+
+  // Mobile / tablet → ESC/POS via RawBT
+  if (isMobileOrTablet()) {
+    const ticket = buildEscPosTicket(cartValues, branchAddress);
+    printViaRawBT(ticket);
+    setTimeout(() => window.clearCart(), 1500);
+    return;
+  }
+
+  // Desktop → window.print() como antes
   let total = 0;
   let itemsHtml = '';
 
   cartValues.forEach((cartRec) => {
-    const { item, quantity, variantName, priceVal } = cartRec;
+    const { item, quantity, priceVal } = cartRec;
     const lineTotal = priceVal * quantity;
     total += lineTotal;
     const qtyStr = Number(quantity.toFixed(3)).toString();
@@ -803,7 +913,6 @@ window.printCart = () => {
   const now = new Date();
   const dateStr = now.toLocaleDateString();
   const timeStr = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-  const branchAddress = BRANCH_ADDRESSES[activeBranch] || 'Tucumán';
 
   const printWindow = window.open('', '_blank');
   printWindow.document.write(`
@@ -885,7 +994,6 @@ window.printCart = () => {
   `);
   printWindow.document.close();
 
-  // Clear cart after printing
   setTimeout(() => {
     window.clearCart();
   }, 500);
